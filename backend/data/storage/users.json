@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "id_1788365426884_oyv9exl",
+    "createdAt": "2026-09-02T16:10:26.884Z",
+    "updatedAt": "2026-09-02T16:10:26.884Z",
+    "name": "Nourish360 Admin",
+    "email": "admin@nourish360.local",
+    "passwordHash": "$2a$10$e.W5oBA00Nup6bq2DGS.iOumYUafGLI63JUfA01AIg86.eKrPuDmm",
+    "role": "admin",
+    "settings": {
+      "units": "metric",
+      "reducedMotion": false,
+      "notifications": {
+        "meals": true,
+        "water": true,
+        "activity": true,
+        "windDown": true,
+        "habits": true
+      }
+    }
+  },
+  {
+    "_id": "id_1788365426990_d6yy80i",
+    "createdAt": "2026-09-02T16:10:26.990Z",
+    "updatedAt": "2026-09-02T16:10:26.990Z",
+    "name": "Maya Patel",
+    "email": "demo@nourish360.local",
+    "passwordHash": "$2a$10$W9dx9aKeFydU4cgtm/WP2OM1xpiDoYr1slu5NBRF/auk.QwBe8eOW",
+    "role": "user",
+    "settings": {
+      "units": "metric",
+      "reducedMotion": false,
+      "notifications": {
+        "meals": true,
+        "water": true,
+        "activity": true,
+        "windDown": true,
+        "habits": true
+      }
+    }
+  }
+]

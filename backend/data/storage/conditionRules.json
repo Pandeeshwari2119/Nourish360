@@ -1,0 +1,412 @@
+[
+  {
+    "_id": "id_1788365426673_54mkh6l",
+    "ruleId": "cond_rule_anemia",
+    "conditionId": "anemia",
+    "name": "Known Low Hemoglobin / Iron Deficiency",
+    "category": "Blood/Nutrition",
+    "safetyLevel": "INFO",
+    "nutritionConsiderations": [
+      "Prioritize plant or heme iron sources paired with Vitamin C to support absorption",
+      "Maintain at least 1 hour separation between iron-rich meals and calcium supplements, tea, or coffee",
+      "Incorporate green leafy vegetables, lentils, and sprouted pulses"
+    ],
+    "foodRules": {
+      "encourage": [
+        "spinach",
+        "lentils",
+        "pomegranate",
+        "sprouts",
+        "beetroot",
+        "beans",
+        "dates",
+        "quinoa"
+      ],
+      "limit": [
+        "excessive tea with meals",
+        "excessive coffee with meals"
+      ],
+      "avoid": []
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "iron",
+        "vitaminC",
+        "folate",
+        "vitaminB12"
+      ],
+      "limitNutrients": []
+    },
+    "activityConsiderations": [
+      "Begin physical activity at a comfortable pace with gentle progression",
+      "Take movement breaks if experiencing fatigue; listen to your body energy levels"
+    ],
+    "sleepConsiderations": [
+      "Aim for 7.5 - 8 hours of restorative sleep to assist cellular recovery"
+    ],
+    "hydrationConsiderations": [
+      "Maintain regular water intake throughout the day (2.5 - 3 Liters)"
+    ],
+    "professionalReviewRequired": false,
+    "sources": [
+      "WHO Nutritional Anaemias Guideline",
+      "NIN Dietary Guidelines"
+    ],
+    "version": "1.2",
+    "lastReviewed": "2026-01-20",
+    "createdAt": "2026-09-02T16:10:26.673Z",
+    "updatedAt": "2026-09-05T15:45:35.597Z"
+  },
+  {
+    "_id": "id_1788365426675_vy8i534",
+    "ruleId": "cond_rule_diabetes",
+    "conditionId": "diabetes",
+    "name": "Type 2 Diabetes / Pre-diabetes",
+    "category": "Metabolic",
+    "safetyLevel": "CAUTION",
+    "nutritionConsiderations": [
+      "Focus on complex low-glycemic index (GI) carbohydrates with high dietary fiber",
+      "Pair carbohydrates with protein and healthy fats to buffer postprandial glucose curves",
+      "Distribute meals evenly across the day and avoid skipping scheduled meals"
+    ],
+    "foodRules": {
+      "encourage": [
+        "millet",
+        "oats",
+        "fenugreek",
+        "legumes",
+        "leafy greens",
+        "chia seeds",
+        "bitter gourd"
+      ],
+      "limit": [
+        "white polished rice",
+        "refined flour (maida)",
+        "fruit juices",
+        "table sugar",
+        "sweets"
+      ],
+      "avoid": [
+        "sugary sodas",
+        "confectionery syrups"
+      ]
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "fiber",
+        "magnesium",
+        "chromium"
+      ],
+      "limitNutrients": [
+        "simple sugars",
+        "refined carbohydrates"
+      ]
+    },
+    "activityConsiderations": [
+      "10-15 minute post-meal walking helps support natural glucose clearance",
+      "Moderate aerobic exercise 4-5 days a week is recommended"
+    ],
+    "sleepConsiderations": [
+      "Consistent bedtime is associated with improved insulin sensitivity"
+    ],
+    "hydrationConsiderations": [
+      "Adequate hydration supports kidney filtration of excess glucose"
+    ],
+    "professionalReviewRequired": false,
+    "sources": [
+      "American Diabetes Association Standards of Care",
+      "ICMR Guidelines"
+    ],
+    "version": "1.3",
+    "lastReviewed": "2026-02-10",
+    "createdAt": "2026-09-02T16:10:26.675Z",
+    "updatedAt": "2026-09-05T15:45:35.598Z"
+  },
+  {
+    "_id": "id_1788365426676_kccukpy",
+    "ruleId": "cond_rule_hypertension",
+    "conditionId": "hypertension",
+    "name": "High Blood Pressure / Hypertension",
+    "category": "Cardiovascular",
+    "safetyLevel": "CAUTION",
+    "nutritionConsiderations": [
+      "Adhere to DASH-style dietary principles emphasizing potassium, magnesium, and calcium",
+      "Keep sodium intake moderate (prefer under 2,000mg/day from foods)",
+      "Flavor dishes with garlic, herbs, and lemon instead of excessive salt"
+    ],
+    "foodRules": {
+      "encourage": [
+        "spinach",
+        "bananas",
+        "garlic",
+        "beetroot",
+        "sweet potato",
+        "yogurt",
+        "oats"
+      ],
+      "limit": [
+        "pickles",
+        "packaged savory snacks",
+        "canned soups",
+        "processed meats"
+      ],
+      "avoid": [
+        "excess added table salt"
+      ]
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "potassium",
+        "magnesium",
+        "calcium",
+        "fiber"
+      ],
+      "limitNutrients": [
+        "sodium"
+      ]
+    },
+    "activityConsiderations": [
+      "Rhythmic aerobic activities like brisk walking, cycling, or swimming",
+      "Avoid heavy breath-holding (Valsalva maneuver) during resistance exercises"
+    ],
+    "sleepConsiderations": [
+      "Prioritize 7-8 hours of uninterrupted sleep; poor sleep elevates sympathetic blood pressure tone"
+    ],
+    "hydrationConsiderations": [
+      "Balanced daily fluid intake without rapid bolus volumes"
+    ],
+    "professionalReviewRequired": false,
+    "sources": [
+      "AHA/ACC Hypertension Guidelines",
+      "DASH Eating Plan"
+    ],
+    "version": "1.1",
+    "lastReviewed": "2026-01-18",
+    "createdAt": "2026-09-02T16:10:26.676Z",
+    "updatedAt": "2026-09-05T15:45:35.599Z"
+  },
+  {
+    "_id": "id_1788365426677_30hmgnn",
+    "ruleId": "cond_rule_gerd",
+    "conditionId": "gerd",
+    "name": "GERD / Acid Reflux / Gastritis",
+    "category": "Digestive",
+    "safetyLevel": "INFO",
+    "nutritionConsiderations": [
+      "Smaller, more frequent meals reduce gastric distension and lower esophageal sphincter pressure",
+      "Allow at least 2.5 to 3 hours between finishing dinner and lying down to sleep",
+      "Avoid trigger foods such as excessive raw onions, peppermint, and deep-fried foods"
+    ],
+    "foodRules": {
+      "encourage": [
+        "oatmeal",
+        "ginger",
+        "bananas",
+        "cucumber",
+        "steamed vegetables",
+        "melons"
+      ],
+      "limit": [
+        "citrus fruits on empty stomach",
+        "tomatoes/ketchup in large quantities",
+        "chocolate"
+      ],
+      "avoid": [
+        "deep-fried oily dishes",
+        "carbonated beverages",
+        "peppermint tea",
+        "heavy late-night meals"
+      ]
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "fiber",
+        "mucilage"
+      ],
+      "limitNutrients": [
+        "saturated fat"
+      ]
+    },
+    "activityConsiderations": [
+      "Avoid vigorous abdominal crunches or inverted yoga poses immediately after eating"
+    ],
+    "sleepConsiderations": [
+      "Elevate head of bed slightly if nighttime symptoms persist; finish dinner 3 hours prior"
+    ],
+    "hydrationConsiderations": [
+      "Sip water gently throughout the day rather than drinking large volumes with meals"
+    ],
+    "professionalReviewRequired": false,
+    "sources": [
+      "American College of Gastroenterology GERD Guidelines"
+    ],
+    "version": "1.0",
+    "lastReviewed": "2026-02-05",
+    "createdAt": "2026-09-02T16:10:26.677Z",
+    "updatedAt": "2026-09-05T15:45:35.602Z"
+  },
+  {
+    "_id": "id_1788365426678_e0t8h7r",
+    "ruleId": "cond_rule_heart_condition",
+    "conditionId": "heart_condition",
+    "name": "Known Heart Condition / Complex Cardiovascular Condition",
+    "category": "Cardiovascular",
+    "safetyLevel": "PROFESSIONAL_REVIEW",
+    "nutritionConsiderations": [
+      "Heart conditions require strict physician guidance on sodium, fluids, and lifestyle",
+      "Our recommendations provide only general conservative guidance; consult your cardiologist"
+    ],
+    "foodRules": {
+      "encourage": [
+        "vegetables",
+        "whole grains",
+        "berries"
+      ],
+      "limit": [
+        "sodium",
+        "saturated fats"
+      ],
+      "avoid": [
+        "trans-fats",
+        "energy drinks"
+      ]
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "antioxidants",
+        "omega3"
+      ],
+      "limitNutrients": [
+        "sodium",
+        "saturated fat"
+      ]
+    },
+    "activityConsiderations": [
+      "Do not engage in unmonitored high-intensity workouts; stick strictly to physician-cleared activity"
+    ],
+    "sleepConsiderations": [
+      "Consistent restful sleep is vital for cardiac stability"
+    ],
+    "hydrationConsiderations": [
+      "Fluid intake must be reviewed by your physician if fluid restriction has been prescribed"
+    ],
+    "professionalReviewRequired": true,
+    "sources": [
+      "AHA Clinical Guidelines"
+    ],
+    "version": "2.0",
+    "lastReviewed": "2026-02-15",
+    "createdAt": "2026-09-02T16:10:26.678Z",
+    "updatedAt": "2026-09-05T15:45:35.603Z"
+  },
+  {
+    "_id": "id_1788365426678_2g6jku5",
+    "ruleId": "cond_rule_thyroid",
+    "conditionId": "thyroid",
+    "name": "Thyroid-Related Condition (Hypothyroid / Hyperthyroid)",
+    "category": "Metabolic",
+    "safetyLevel": "INFO",
+    "nutritionConsiderations": [
+      "Take thyroid medication on an empty stomach with plain water at least 45 minutes before breakfast",
+      "Maintain adequate selenium, zinc, and tyrosine from diverse whole foods",
+      "Cook cruciferous vegetables (cabbage, cauliflower) thoroughly to deactivate goitrogens"
+    ],
+    "foodRules": {
+      "encourage": [
+        "brazil nuts",
+        "mushrooms",
+        "pumpkin seeds",
+        "cooked greens",
+        "yogurt"
+      ],
+      "limit": [
+        "raw cruciferous vegetables in large amounts",
+        "soy right after thyroid medication"
+      ],
+      "avoid": []
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "selenium",
+        "zinc",
+        "iodine",
+        "tyrosine"
+      ],
+      "limitNutrients": []
+    },
+    "activityConsiderations": [
+      "Consistent moderate daily activity supports healthy metabolic rate"
+    ],
+    "sleepConsiderations": [
+      "Ensure 7-9 hours of consistent sleep as circadian rhythm regulates endocrine function"
+    ],
+    "hydrationConsiderations": [
+      "Regular water intake supports cellular metabolism"
+    ],
+    "professionalReviewRequired": false,
+    "sources": [
+      "American Thyroid Association Guidelines"
+    ],
+    "version": "1.1",
+    "lastReviewed": "2026-01-22",
+    "createdAt": "2026-09-02T16:10:26.678Z",
+    "updatedAt": "2026-09-05T15:45:35.604Z"
+  },
+  {
+    "_id": "id_1788365426679_6fhgn53",
+    "ruleId": "cond_rule_asthma",
+    "conditionId": "asthma",
+    "name": "Asthma / Reactive Airway Condition",
+    "category": "Respiratory",
+    "safetyLevel": "INFO",
+    "nutritionConsiderations": [
+      "Eat a rainbow of antioxidant-rich fruits and vegetables to support airway health",
+      "Avoid known personal food triggers and foods with artificial sulfites",
+      "Sip warm infusions like ginger or chamomile"
+    ],
+    "foodRules": {
+      "encourage": [
+        "apples",
+        "carrots",
+        "berries",
+        "ginger",
+        "turmeric",
+        "warm herbal infusions"
+      ],
+      "limit": [
+        "sulfite-treated dried fruits",
+        "ice-cold drinks during flare-ups"
+      ],
+      "avoid": []
+    },
+    "nutrientRules": {
+      "encourageNutrients": [
+        "vitaminC",
+        "vitaminE",
+        "betaCarotene",
+        "magnesium"
+      ],
+      "limitNutrients": [
+        "sulfites"
+      ]
+    },
+    "activityConsiderations": [
+      "Always perform a 5-10 minute gentle warm-up before any cardio or brisk exercise",
+      "Keep your prescribed rescue inhaler accessible during all physical routines"
+    ],
+    "sleepConsiderations": [
+      "Keep sleeping quarters allergen and dust-free; use hypoallergenic bedding"
+    ],
+    "hydrationConsiderations": [
+      "Adequate hydration keeps airway mucus thin and easy to clear"
+    ],
+    "professionalReviewRequired": false,
+    "sources": [
+      "Global Initiative for Asthma (GINA) Report"
+    ],
+    "version": "1.0",
+    "lastReviewed": "2026-01-30",
+    "createdAt": "2026-09-02T16:10:26.679Z",
+    "updatedAt": "2026-09-05T15:45:35.605Z"
+  }
+]

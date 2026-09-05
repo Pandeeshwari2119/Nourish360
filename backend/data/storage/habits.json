@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "id_1788365426691_05851k0",
+    "habitId": "habit_water_morning",
+    "title": "Hydrate Upon Waking",
+    "category": "Hydration",
+    "description": "Drink 1-2 glasses of warm or room-temperature water before your morning tea, coffee, or breakfast.",
+    "frequency": "daily",
+    "icon": "Droplets",
+    "createdAt": "2026-09-02T16:10:26.691Z",
+    "updatedAt": "2026-09-05T15:45:35.618Z"
+  },
+  {
+    "_id": "id_1788365426699_dpfulzj",
+    "habitId": "habit_sunlight_walk",
+    "title": "10-Minute Morning Daylight",
+    "category": "Movement",
+    "description": "Step outside within the first hour of waking to anchor your circadian rhythm and boost morning alertness.",
+    "frequency": "daily",
+    "icon": "Sun",
+    "createdAt": "2026-09-02T16:10:26.699Z",
+    "updatedAt": "2026-09-05T15:45:35.619Z"
+  },
+  {
+    "_id": "id_1788365426701_iaf3enn",
+    "habitId": "habit_screen_winddown",
+    "title": "Screen-Free Wind-Down",
+    "category": "Sleep",
+    "description": "Turn off televisions, laptops, and smartphones 45 minutes prior to your target bedtime.",
+    "frequency": "daily",
+    "icon": "Moon",
+    "createdAt": "2026-09-02T16:10:26.701Z",
+    "updatedAt": "2026-09-05T15:45:35.620Z"
+  },
+  {
+    "_id": "id_1788365426702_u97pdj8",
+    "habitId": "habit_post_meal_walk",
+    "title": "10-Minute Post-Meal Stroll",
+    "category": "Movement",
+    "description": "Take an easy, gentle walk after your largest meal to aid digestion and support healthy glucose regulation.",
+    "frequency": "daily",
+    "icon": "Footprints",
+    "createdAt": "2026-09-02T16:10:26.702Z",
+    "updatedAt": "2026-09-05T15:45:35.621Z"
+  },
+  {
+    "_id": "id_1788365426703_trewf5x",
+    "habitId": "habit_mindful_eating",
+    "title": "Mindful Chew & Savor",
+    "category": "Nutrition",
+    "description": "Eat at least one meal today without screens or multitasking, chewing food thoroughly and noticing flavors.",
+    "frequency": "daily",
+    "icon": "Utensils",
+    "createdAt": "2026-09-02T16:10:26.703Z",
+    "updatedAt": "2026-09-05T15:45:35.622Z"
+  },
+  {
+    "_id": "id_1788365426703_5io8u1m",
+    "habitId": "habit_desk_stretch",
+    "title": "Midday Posture & Spine Reset",
+    "category": "Movement",
+    "description": "Stand up, roll shoulders, and perform 2 minutes of gentle chest opening and spinal twists.",
+    "frequency": "daily",
+    "icon": "Activity",
+    "createdAt": "2026-09-02T16:10:26.703Z",
+    "updatedAt": "2026-09-05T15:45:35.623Z"
+  },
+  {
+    "_id": "id_1788365426704_gcwgpqr",
+    "habitId": "habit_veggie_portion",
+    "title": "Colorful Veggie Inclusion",
+    "category": "Nutrition",
+    "description": "Ensure at least half your lunch or dinner plate is filled with colorful cooked or fresh vegetables.",
+    "frequency": "daily",
+    "icon": "Salad",
+    "createdAt": "2026-09-02T16:10:26.704Z",
+    "updatedAt": "2026-09-05T15:45:35.624Z"
+  },
+  {
+    "_id": "id_1788365426705_bya9kdh",
+    "habitId": "habit_deep_breaths",
+    "title": "4-7-8 Evening Relaxation Breaths",
+    "category": "Sleep",
+    "description": "Perform 4 rounds of slow diaphragmatic breathing to switch on your body natural relaxation response.",
+    "frequency": "daily",
+    "icon": "Heart",
+    "createdAt": "2026-09-02T16:10:26.705Z",
+    "updatedAt": "2026-09-05T15:45:35.625Z"
+  }
+]

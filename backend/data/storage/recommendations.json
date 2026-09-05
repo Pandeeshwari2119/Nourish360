@@ -1,0 +1,1552 @@
+[
+  {
+    "_id": "id_1788366454986_15cl2sg",
+    "createdAt": "2026-09-02T16:27:34.986Z",
+    "updatedAt": "2026-09-02T16:27:34.986Z",
+    "userId": "test_user_e2e_01",
+    "generatedAt": "2026-09-02T16:27:34.986Z",
+    "engineVersion": "1.2.0",
+    "profileVersion": "1.0",
+    "safetyStatus": "INFO",
+    "professionalReviewRequired": false,
+    "reviewReasons": [],
+    "warnings": [],
+    "dailyTimeline": [
+      {
+        "id": "time_wake",
+        "time": "07:00",
+        "type": "routine",
+        "title": "Gentle Awakening & Hydration",
+        "description": "Wake up naturally, open blinds to let morning daylight in, and drink 1-2 glasses of water.",
+        "reason": "Anchors circadian rhythm and jumpstarts metabolism.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "slot_breakfast_1788366454957_8uv9",
+        "time": "08:30",
+        "type": "meal",
+        "title": "Breakfast: Sprouted Green Moong & Pomegranate Salad",
+        "description": "1 large bowl (160g) • 180 kcal • 11g protein • 32g carbs • 2g fat",
+        "details": {
+          "slotId": "slot_breakfast_1788366454957_8uv9",
+          "mealType": "breakfast",
+          "label": "Breakfast",
+          "suggestedTime": "08:30",
+          "foodId": "food_sp_01",
+          "foodName": "Sprouted Green Moong & Pomegranate Salad",
+          "cuisine": "South Indian",
+          "servingSize": "1 large bowl (160g)",
+          "calories": 180,
+          "protein": 11,
+          "carbohydrates": 32,
+          "fat": 2,
+          "fiber": 9,
+          "allergens": [],
+          "ingredients": [
+            "sprouted green moong beans",
+            "pomegranate arils",
+            "cucumber",
+            "lemon juice",
+            "chaat masala",
+            "coriander"
+          ],
+          "tags": [
+            "live-enzymes",
+            "iron-rich",
+            "vitamin-c",
+            "metabolism"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 50,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "time_act_1",
+        "time": "11:15",
+        "type": "activity",
+        "title": "Movement & Posture Break",
+        "description": "Stand up, roll shoulders, and stretch chest.",
+        "reason": "Offsets sitting duration and reduces spinal tension.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "slot_lunch_1788366454958_a3ko",
+        "time": "13:00",
+        "type": "meal",
+        "title": "Lunch: Moong Dal Pongal with Steamed Greens",
+        "description": "1 bowl (220g) • 360 kcal • 14g protein • 56g carbs • 9g fat",
+        "details": {
+          "slotId": "slot_lunch_1788366454958_a3ko",
+          "mealType": "lunch",
+          "label": "Lunch",
+          "suggestedTime": "13:00",
+          "foodId": "food_si_03",
+          "foodName": "Moong Dal Pongal with Steamed Greens",
+          "cuisine": "South Indian",
+          "servingSize": "1 bowl (220g)",
+          "calories": 360,
+          "protein": 14,
+          "carbohydrates": 56,
+          "fat": 9,
+          "fiber": 8,
+          "allergens": [
+            "tree nuts"
+          ],
+          "ingredients": [
+            "yellow moong dal",
+            "rice",
+            "black pepper",
+            "cumin",
+            "ginger",
+            "spinach",
+            "cashews",
+            "ghee"
+          ],
+          "tags": [
+            "easy-to-digest",
+            "comfort-food",
+            "high-protein"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 35,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "slot_snack_1788366454958_jtkq",
+        "time": "17:00",
+        "type": "meal",
+        "title": "Evening Refreshment: Sundal (Spiced Boiled Chickpeas & Coconut)",
+        "description": "1 bowl (120g) • 195 kcal • 9g protein • 28g carbs • 5g fat",
+        "details": {
+          "slotId": "slot_snack_1788366454958_jtkq",
+          "mealType": "snack",
+          "label": "Evening Refreshment",
+          "suggestedTime": "17:00",
+          "foodId": "food_si_06",
+          "foodName": "Sundal (Spiced Boiled Chickpeas & Coconut)",
+          "cuisine": "South Indian",
+          "servingSize": "1 bowl (120g)",
+          "calories": 195,
+          "protein": 9,
+          "carbohydrates": 28,
+          "fat": 5,
+          "fiber": 7,
+          "allergens": [
+            "coconut"
+          ],
+          "ingredients": [
+            "white chickpeas",
+            "grated coconut",
+            "green chillies",
+            "mustard seeds",
+            "curry leaves",
+            "hing"
+          ],
+          "tags": [
+            "high-protein",
+            "clean-snack",
+            "fiber"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 20,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "time_act_2",
+        "time": "18:30",
+        "type": "activity",
+        "title": "Beginner Low-Impact Full Body Circuit",
+        "description": "25 mins • Beginner difficulty",
+        "details": {
+          "_id": "id_1788365426687_0xqxv4f",
+          "exerciseId": "ex_home_01",
+          "name": "Beginner Low-Impact Full Body Circuit",
+          "category": "Home workout",
+          "durationMinutes": 20,
+          "difficulty": "Beginner",
+          "equipment": "Sturdy chair, wall, mat",
+          "instructions": [
+            "Chair squats (sit down gently and stand up tall) — 10 reps.",
+            "Wall push-ups or counter push-ups — 10 reps.",
+            "Standing calf raises holding chair back — 15 reps.",
+            "Glute bridges lying on back — 12 reps.",
+            "Rest 60 seconds and repeat 2-3 rounds."
+          ],
+          "safetyNotes": [
+            "Keep knees tracking in line with toes; avoid breath holding."
+          ],
+          "contraindications": [
+            "Severe acute joint swelling"
+          ],
+          "targetAreas": [
+            "Quadriceps",
+            "Glutes",
+            "Chest",
+            "Core"
+          ],
+          "createdAt": "2026-09-02T16:10:26.687Z",
+          "updatedAt": "2026-09-02T16:27:34.938Z"
+        },
+        "reason": "Gradually advances your daily step count towards a sustainable baseline.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "slot_dinner_1788366454959_m1pt",
+        "time": "20:30",
+        "type": "meal",
+        "title": "Dinner: Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
+        "description": "1 bowl dal + 1 cup brown rice + 1/2 cup raita • 490 kcal • 19g protein • 77g carbs • 11g fat",
+        "details": {
+          "slotId": "slot_dinner_1788366454959_m1pt",
+          "mealType": "dinner",
+          "label": "Dinner",
+          "suggestedTime": "20:30",
+          "foodId": "food_ni_02",
+          "foodName": "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
+          "cuisine": "North Indian",
+          "servingSize": "1 bowl dal + 1 cup brown rice + 1/2 cup raita",
+          "calories": 490,
+          "protein": 19,
+          "carbohydrates": 77,
+          "fat": 11,
+          "fiber": 12,
+          "allergens": [
+            "milk"
+          ],
+          "ingredients": [
+            "yellow toor dal",
+            "fresh spinach",
+            "brown rice",
+            "plain low-fat curd",
+            "cucumber",
+            "cumin",
+            "garlic"
+          ],
+          "tags": [
+            "iron-rich",
+            "gut-friendly",
+            "high-fiber",
+            "anemia-friendly"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 35,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "time_winddown",
+        "time": "22:15",
+        "type": "sleep",
+        "title": "Screen Curfew & Evening Wind-Down",
+        "description": "Begin dimming lights, turn off digital screens, and practice calm breathing.",
+        "reason": "Promotes natural melatonin secretion for deep restorative sleep.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "time_sleep",
+        "time": "23:00",
+        "type": "sleep",
+        "title": "Sleep Target",
+        "description": "Targeting ~7.5 hours of uninterrupted restorative sleep.",
+        "reason": "Crucial for cognitive, hormonal, and muscular recovery.",
+        "confidence": "HIGH"
+      }
+    ],
+    "nutrition": {
+      "calories": {
+        "value": 1566,
+        "unit": "kcal",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "Mifflin-St Jeor TDEE formula with activity factors",
+        "limitations": "General estimated wellness guidance only; not an individualized medical prescription."
+      },
+      "protein": {
+        "value": 86,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "22% of daily estimated caloric intake (~1.5g/kg)",
+        "limitations": "May need adjustment based on individual renal or metabolic health status."
+      },
+      "carbohydrates": {
+        "value": 196,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "50% of daily estimated energy expenditure with emphasis on complex fiber sources",
+        "limitations": "People managing blood sugar should monitor postprandial glycemic response."
+      },
+      "fat": {
+        "value": 49,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "28% of daily energy primarily from unsaturated plant sources",
+        "limitations": "Avoid heavy trans and saturated fats."
+      },
+      "fiber": {
+        "value": 22,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "high",
+        "basis": "Dietary reference intake of 14g per 1,000 daily kcal",
+        "limitations": "Increase fluid intake alongside fiber increments."
+      },
+      "hydration": {
+        "value": 2,
+        "unit": "Liters",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "~35 ml/kg baseline fluid replacement guidance",
+        "limitations": "Patients with physician-prescribed fluid restrictions must follow their doctor guidance."
+      }
+    },
+    "meals": [
+      {
+        "slotId": "slot_breakfast_1788366454957_8uv9",
+        "mealType": "breakfast",
+        "label": "Breakfast",
+        "suggestedTime": "08:30",
+        "foodId": "food_sp_01",
+        "foodName": "Sprouted Green Moong & Pomegranate Salad",
+        "cuisine": "South Indian",
+        "servingSize": "1 large bowl (160g)",
+        "calories": 180,
+        "protein": 11,
+        "carbohydrates": 32,
+        "fat": 2,
+        "fiber": 9,
+        "allergens": [],
+        "ingredients": [
+          "sprouted green moong beans",
+          "pomegranate arils",
+          "cucumber",
+          "lemon juice",
+          "chaat masala",
+          "coriander"
+        ],
+        "tags": [
+          "live-enzymes",
+          "iron-rich",
+          "vitamin-c",
+          "metabolism"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 50,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      },
+      {
+        "slotId": "slot_lunch_1788366454958_a3ko",
+        "mealType": "lunch",
+        "label": "Lunch",
+        "suggestedTime": "13:00",
+        "foodId": "food_si_03",
+        "foodName": "Moong Dal Pongal with Steamed Greens",
+        "cuisine": "South Indian",
+        "servingSize": "1 bowl (220g)",
+        "calories": 360,
+        "protein": 14,
+        "carbohydrates": 56,
+        "fat": 9,
+        "fiber": 8,
+        "allergens": [
+          "tree nuts"
+        ],
+        "ingredients": [
+          "yellow moong dal",
+          "rice",
+          "black pepper",
+          "cumin",
+          "ginger",
+          "spinach",
+          "cashews",
+          "ghee"
+        ],
+        "tags": [
+          "easy-to-digest",
+          "comfort-food",
+          "high-protein"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 35,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      },
+      {
+        "slotId": "slot_snack_1788366454958_jtkq",
+        "mealType": "snack",
+        "label": "Evening Refreshment",
+        "suggestedTime": "17:00",
+        "foodId": "food_si_06",
+        "foodName": "Sundal (Spiced Boiled Chickpeas & Coconut)",
+        "cuisine": "South Indian",
+        "servingSize": "1 bowl (120g)",
+        "calories": 195,
+        "protein": 9,
+        "carbohydrates": 28,
+        "fat": 5,
+        "fiber": 7,
+        "allergens": [
+          "coconut"
+        ],
+        "ingredients": [
+          "white chickpeas",
+          "grated coconut",
+          "green chillies",
+          "mustard seeds",
+          "curry leaves",
+          "hing"
+        ],
+        "tags": [
+          "high-protein",
+          "clean-snack",
+          "fiber"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 20,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      },
+      {
+        "slotId": "slot_dinner_1788366454959_m1pt",
+        "mealType": "dinner",
+        "label": "Dinner",
+        "suggestedTime": "20:30",
+        "foodId": "food_ni_02",
+        "foodName": "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
+        "cuisine": "North Indian",
+        "servingSize": "1 bowl dal + 1 cup brown rice + 1/2 cup raita",
+        "calories": 490,
+        "protein": 19,
+        "carbohydrates": 77,
+        "fat": 11,
+        "fiber": 12,
+        "allergens": [
+          "milk"
+        ],
+        "ingredients": [
+          "yellow toor dal",
+          "fresh spinach",
+          "brown rice",
+          "plain low-fat curd",
+          "cucumber",
+          "cumin",
+          "garlic"
+        ],
+        "tags": [
+          "iron-rich",
+          "gut-friendly",
+          "high-fiber",
+          "anemia-friendly"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 35,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      }
+    ],
+    "activityPlan": {
+      "targetDailySteps": 4700,
+      "baselineSteps": 3500,
+      "progressionNote": "Targeting a gradual, sustainable +1200 steps increase without extreme jumps.",
+      "activeMinutesGoal": 25,
+      "recommendedWorkout": {
+        "_id": "id_1788365426687_0xqxv4f",
+        "exerciseId": "ex_home_01",
+        "name": "Beginner Low-Impact Full Body Circuit",
+        "category": "Home workout",
+        "durationMinutes": 20,
+        "difficulty": "Beginner",
+        "equipment": "Sturdy chair, wall, mat",
+        "instructions": [
+          "Chair squats (sit down gently and stand up tall) — 10 reps.",
+          "Wall push-ups or counter push-ups — 10 reps.",
+          "Standing calf raises holding chair back — 15 reps.",
+          "Glute bridges lying on back — 12 reps.",
+          "Rest 60 seconds and repeat 2-3 rounds."
+        ],
+        "safetyNotes": [
+          "Keep knees tracking in line with toes; avoid breath holding."
+        ],
+        "contraindications": [
+          "Severe acute joint swelling"
+        ],
+        "targetAreas": [
+          "Quadriceps",
+          "Glutes",
+          "Chest",
+          "Core"
+        ],
+        "createdAt": "2026-09-02T16:10:26.687Z",
+        "updatedAt": "2026-09-02T16:27:34.938Z"
+      },
+      "movementBreaks": [
+        {
+          "time": "11:00",
+          "title": "Mid-Morning Spine & Shoulder Release",
+          "durationMinutes": 5,
+          "action": "Stand up, roll shoulders, and stretch chest."
+        },
+        {
+          "time": "15:30",
+          "title": "Afternoon Circulation Walk",
+          "durationMinutes": 10,
+          "action": "Short stroll to refresh mental focus and leg circulation."
+        }
+      ]
+    },
+    "sleepPlan": {
+      "targetBedtime": "23:00",
+      "targetWakeTime": "07:00",
+      "estimatedDurationHours": 7.5,
+      "windDownStartTime": "22:15",
+      "checklist": [
+        {
+          "id": "wind_1",
+          "task": "Dim bright overhead lights & enable warm night mode",
+          "time": "22:15"
+        },
+        {
+          "id": "wind_2",
+          "task": "Screen curfew: stow phone, laptop & TV away",
+          "time": "22:30"
+        },
+        {
+          "id": "wind_3",
+          "task": "Sip a warm herbal infusion or water (avoid caffeine)",
+          "time": "Before bed"
+        },
+        {
+          "id": "wind_4",
+          "task": "4-7-8 deep diaphragmatic breathing or light reading",
+          "time": "15 mins before bed"
+        }
+      ],
+      "safetyNotice": "This sleep routine supports healthy circadian habits. Nourish360 does not diagnose sleep disorders. If experiencing persistent insomnia or daytime apnea, consult a qualified physician."
+    },
+    "hydrationPlan": {
+      "targetLiters": 2,
+      "targetGlasses": 8,
+      "glassVolumeMl": 250,
+      "professionalReviewRequired": false,
+      "guidanceMessage": "Targeting approximately 2 Liters (8 glasses) spaced evenly across your day.",
+      "reminders": [
+        {
+          "time": "07:30",
+          "note": "Morning awakening glass (room temperature)"
+        },
+        {
+          "time": "11:00",
+          "note": "Mid-morning hydration check"
+        },
+        {
+          "time": "14:30",
+          "note": "Afternoon hydration recharge"
+        },
+        {
+          "time": "18:00",
+          "note": "Early evening water"
+        }
+      ]
+    },
+    "habits": [
+      {
+        "_id": "id_1788365426702_u97pdj8",
+        "habitId": "habit_post_meal_walk",
+        "title": "10-Minute Post-Meal Stroll",
+        "category": "Movement",
+        "description": "Take an easy, gentle walk after your largest meal to aid digestion and support healthy glucose regulation.",
+        "frequency": "daily",
+        "icon": "Footprints",
+        "createdAt": "2026-09-02T16:10:26.702Z",
+        "updatedAt": "2026-09-02T16:27:34.947Z",
+        "completedToday": false
+      },
+      {
+        "_id": "id_1788365426704_gcwgpqr",
+        "habitId": "habit_veggie_portion",
+        "title": "Colorful Veggie Inclusion",
+        "category": "Nutrition",
+        "description": "Ensure at least half your lunch or dinner plate is filled with colorful cooked or fresh vegetables.",
+        "frequency": "daily",
+        "icon": "Salad",
+        "createdAt": "2026-09-02T16:10:26.704Z",
+        "updatedAt": "2026-09-02T16:27:34.950Z",
+        "completedToday": false
+      },
+      {
+        "_id": "id_1788365426691_05851k0",
+        "habitId": "habit_water_morning",
+        "title": "Hydrate Upon Waking",
+        "category": "Hydration",
+        "description": "Drink 1-2 glasses of warm or room-temperature water before your morning tea, coffee, or breakfast.",
+        "frequency": "daily",
+        "icon": "Droplets",
+        "createdAt": "2026-09-02T16:10:26.691Z",
+        "updatedAt": "2026-09-02T16:27:34.943Z",
+        "completedToday": false
+      },
+      {
+        "_id": "id_1788365426699_dpfulzj",
+        "habitId": "habit_sunlight_walk",
+        "title": "10-Minute Morning Daylight",
+        "category": "Movement",
+        "description": "Step outside within the first hour of waking to anchor your circadian rhythm and boost morning alertness.",
+        "frequency": "daily",
+        "icon": "Sun",
+        "createdAt": "2026-09-02T16:10:26.699Z",
+        "updatedAt": "2026-09-02T16:27:34.944Z",
+        "completedToday": false
+      }
+    ],
+    "explanations": [
+      {
+        "itemId": "food_sp_01",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (08:30).",
+          "✓ Matches your preferred cuisine (South Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      },
+      {
+        "itemId": "food_si_03",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (13:00).",
+          "✓ Matches your preferred cuisine (South Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      },
+      {
+        "itemId": "food_si_06",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (17:00).",
+          "✓ Matches your preferred cuisine (South Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      },
+      {
+        "itemId": "food_ni_02",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (20:30).",
+          "✓ Matches your preferred cuisine (North Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      }
+    ],
+    "auditTrail": {
+      "userId": "test_user_e2e_01",
+      "profileInputs": {
+        "age": 29,
+        "sex": "female",
+        "dietaryPattern": "Vegetarian",
+        "allergies": [
+          "peanuts"
+        ],
+        "conditions": [
+          "anemia"
+        ],
+        "goals": [
+          "Balanced eating",
+          "Improve activity"
+        ]
+      },
+      "rulesTriggered": [
+        "cond_rule_anemia"
+      ],
+      "foodsBlocked": [],
+      "foodsSelected": [
+        "Sprouted Green Moong & Pomegranate Salad",
+        "Moong Dal Pongal with Steamed Greens",
+        "Sundal (Spiced Boiled Chickpeas & Coconut)",
+        "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita"
+      ],
+      "safetyFlags": [],
+      "engineVersion": "1.2.0",
+      "ruleVersion": "2026.1"
+    }
+  },
+  {
+    "_id": "id_1788623135655_t799c9z",
+    "createdAt": "2026-09-05T15:45:35.655Z",
+    "updatedAt": "2026-09-05T15:45:35.655Z",
+    "userId": "test_user_e2e_01",
+    "generatedAt": "2026-09-05T15:45:35.654Z",
+    "engineVersion": "1.2.0",
+    "profileVersion": "1.0",
+    "safetyStatus": "INFO",
+    "professionalReviewRequired": false,
+    "reviewReasons": [],
+    "warnings": [],
+    "dailyTimeline": [
+      {
+        "id": "time_wake",
+        "time": "07:00",
+        "type": "routine",
+        "title": "Gentle Awakening & Hydration",
+        "description": "Wake up naturally, open blinds to let morning daylight in, and drink 1-2 glasses of water.",
+        "reason": "Anchors circadian rhythm and jumpstarts metabolism.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "slot_breakfast_1788623135632_l874",
+        "time": "08:30",
+        "type": "meal",
+        "title": "Breakfast: Sprouted Green Moong & Pomegranate Salad",
+        "description": "1 large bowl (160g) • 180 kcal • 11g protein • 32g carbs • 2g fat",
+        "details": {
+          "slotId": "slot_breakfast_1788623135632_l874",
+          "mealType": "breakfast",
+          "label": "Breakfast",
+          "suggestedTime": "08:30",
+          "foodId": "food_sp_01",
+          "foodName": "Sprouted Green Moong & Pomegranate Salad",
+          "cuisine": "South Indian",
+          "servingSize": "1 large bowl (160g)",
+          "calories": 180,
+          "protein": 11,
+          "carbohydrates": 32,
+          "fat": 2,
+          "fiber": 9,
+          "allergens": [],
+          "ingredients": [
+            "sprouted green moong beans",
+            "pomegranate arils",
+            "cucumber",
+            "lemon juice",
+            "chaat masala",
+            "coriander"
+          ],
+          "tags": [
+            "live-enzymes",
+            "iron-rich",
+            "vitamin-c",
+            "metabolism"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 50,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "time_act_1",
+        "time": "11:15",
+        "type": "activity",
+        "title": "Movement & Posture Break",
+        "description": "Stand up, roll shoulders, and stretch chest.",
+        "reason": "Offsets sitting duration and reduces spinal tension.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "slot_lunch_1788623135633_do2e",
+        "time": "13:00",
+        "type": "meal",
+        "title": "Lunch: Moong Dal Pongal with Steamed Greens",
+        "description": "1 bowl (220g) • 360 kcal • 14g protein • 56g carbs • 9g fat",
+        "details": {
+          "slotId": "slot_lunch_1788623135633_do2e",
+          "mealType": "lunch",
+          "label": "Lunch",
+          "suggestedTime": "13:00",
+          "foodId": "food_si_03",
+          "foodName": "Moong Dal Pongal with Steamed Greens",
+          "cuisine": "South Indian",
+          "servingSize": "1 bowl (220g)",
+          "calories": 360,
+          "protein": 14,
+          "carbohydrates": 56,
+          "fat": 9,
+          "fiber": 8,
+          "allergens": [
+            "tree nuts"
+          ],
+          "ingredients": [
+            "yellow moong dal",
+            "rice",
+            "black pepper",
+            "cumin",
+            "ginger",
+            "spinach",
+            "cashews",
+            "ghee"
+          ],
+          "tags": [
+            "easy-to-digest",
+            "comfort-food",
+            "high-protein"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 35,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "slot_snack_1788623135634_aydd",
+        "time": "17:00",
+        "type": "meal",
+        "title": "Evening Refreshment: Sundal (Spiced Boiled Chickpeas & Coconut)",
+        "description": "1 bowl (120g) • 195 kcal • 9g protein • 28g carbs • 5g fat",
+        "details": {
+          "slotId": "slot_snack_1788623135634_aydd",
+          "mealType": "snack",
+          "label": "Evening Refreshment",
+          "suggestedTime": "17:00",
+          "foodId": "food_si_06",
+          "foodName": "Sundal (Spiced Boiled Chickpeas & Coconut)",
+          "cuisine": "South Indian",
+          "servingSize": "1 bowl (120g)",
+          "calories": 195,
+          "protein": 9,
+          "carbohydrates": 28,
+          "fat": 5,
+          "fiber": 7,
+          "allergens": [
+            "coconut"
+          ],
+          "ingredients": [
+            "white chickpeas",
+            "grated coconut",
+            "green chillies",
+            "mustard seeds",
+            "curry leaves",
+            "hing"
+          ],
+          "tags": [
+            "high-protein",
+            "clean-snack",
+            "fiber"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 20,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "time_act_2",
+        "time": "18:30",
+        "type": "activity",
+        "title": "Beginner Low-Impact Full Body Circuit",
+        "description": "25 mins • Beginner difficulty",
+        "details": {
+          "_id": "id_1788365426687_0xqxv4f",
+          "exerciseId": "ex_home_01",
+          "name": "Beginner Low-Impact Full Body Circuit",
+          "category": "Home workout",
+          "durationMinutes": 20,
+          "difficulty": "Beginner",
+          "equipment": "Sturdy chair, wall, mat",
+          "instructions": [
+            "Chair squats (sit down gently and stand up tall) — 10 reps.",
+            "Wall push-ups or counter push-ups — 10 reps.",
+            "Standing calf raises holding chair back — 15 reps.",
+            "Glute bridges lying on back — 12 reps.",
+            "Rest 60 seconds and repeat 2-3 rounds."
+          ],
+          "safetyNotes": [
+            "Keep knees tracking in line with toes; avoid breath holding."
+          ],
+          "contraindications": [
+            "Severe acute joint swelling"
+          ],
+          "targetAreas": [
+            "Quadriceps",
+            "Glutes",
+            "Chest",
+            "Core"
+          ],
+          "createdAt": "2026-09-02T16:10:26.687Z",
+          "updatedAt": "2026-09-05T15:45:35.614Z"
+        },
+        "reason": "Gradually advances your daily step count towards a sustainable baseline.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "slot_dinner_1788623135634_6qn1",
+        "time": "20:30",
+        "type": "meal",
+        "title": "Dinner: Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
+        "description": "1 bowl dal + 1 cup brown rice + 1/2 cup raita • 490 kcal • 19g protein • 77g carbs • 11g fat",
+        "details": {
+          "slotId": "slot_dinner_1788623135634_6qn1",
+          "mealType": "dinner",
+          "label": "Dinner",
+          "suggestedTime": "20:30",
+          "foodId": "food_ni_02",
+          "foodName": "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
+          "cuisine": "North Indian",
+          "servingSize": "1 bowl dal + 1 cup brown rice + 1/2 cup raita",
+          "calories": 490,
+          "protein": 19,
+          "carbohydrates": 77,
+          "fat": 11,
+          "fiber": 12,
+          "allergens": [
+            "milk"
+          ],
+          "ingredients": [
+            "yellow toor dal",
+            "fresh spinach",
+            "brown rice",
+            "plain low-fat curd",
+            "cucumber",
+            "cumin",
+            "garlic"
+          ],
+          "tags": [
+            "iron-rich",
+            "gut-friendly",
+            "high-fiber",
+            "anemia-friendly"
+          ],
+          "confidence": "HIGH",
+          "scoreBreakdown": {
+            "nutritionFit": 35,
+            "goalFit": 15,
+            "preferenceFit": 10,
+            "scheduleFit": 30,
+            "cuisineFit": 25,
+            "budgetFit": 5,
+            "varietyScore": 10,
+            "convenienceScore": 10,
+            "feedbackScore": 0
+          },
+          "completed": false
+        },
+        "reason": "Matches your Vegetarian diet and scheduled meal timing.",
+        "confidence": "HIGH",
+        "completed": false
+      },
+      {
+        "id": "time_winddown",
+        "time": "22:15",
+        "type": "sleep",
+        "title": "Screen Curfew & Evening Wind-Down",
+        "description": "Begin dimming lights, turn off digital screens, and practice calm breathing.",
+        "reason": "Promotes natural melatonin secretion for deep restorative sleep.",
+        "confidence": "HIGH"
+      },
+      {
+        "id": "time_sleep",
+        "time": "23:00",
+        "type": "sleep",
+        "title": "Sleep Target",
+        "description": "Targeting ~7.5 hours of uninterrupted restorative sleep.",
+        "reason": "Crucial for cognitive, hormonal, and muscular recovery.",
+        "confidence": "HIGH"
+      }
+    ],
+    "nutrition": {
+      "calories": {
+        "value": 1566,
+        "unit": "kcal",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "Mifflin-St Jeor TDEE formula with activity factors",
+        "limitations": "General estimated wellness guidance only; not an individualized medical prescription."
+      },
+      "protein": {
+        "value": 86,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "22% of daily estimated caloric intake (~1.5g/kg)",
+        "limitations": "May need adjustment based on individual renal or metabolic health status."
+      },
+      "carbohydrates": {
+        "value": 196,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "50% of daily estimated energy expenditure with emphasis on complex fiber sources",
+        "limitations": "People managing blood sugar should monitor postprandial glycemic response."
+      },
+      "fat": {
+        "value": 49,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "28% of daily energy primarily from unsaturated plant sources",
+        "limitations": "Avoid heavy trans and saturated fats."
+      },
+      "fiber": {
+        "value": 22,
+        "unit": "g",
+        "type": "estimated",
+        "confidence": "high",
+        "basis": "Dietary reference intake of 14g per 1,000 daily kcal",
+        "limitations": "Increase fluid intake alongside fiber increments."
+      },
+      "hydration": {
+        "value": 2,
+        "unit": "Liters",
+        "type": "estimated",
+        "confidence": "medium",
+        "basis": "~35 ml/kg baseline fluid replacement guidance",
+        "limitations": "Patients with physician-prescribed fluid restrictions must follow their doctor guidance."
+      }
+    },
+    "meals": [
+      {
+        "slotId": "slot_breakfast_1788623135632_l874",
+        "mealType": "breakfast",
+        "label": "Breakfast",
+        "suggestedTime": "08:30",
+        "foodId": "food_sp_01",
+        "foodName": "Sprouted Green Moong & Pomegranate Salad",
+        "cuisine": "South Indian",
+        "servingSize": "1 large bowl (160g)",
+        "calories": 180,
+        "protein": 11,
+        "carbohydrates": 32,
+        "fat": 2,
+        "fiber": 9,
+        "allergens": [],
+        "ingredients": [
+          "sprouted green moong beans",
+          "pomegranate arils",
+          "cucumber",
+          "lemon juice",
+          "chaat masala",
+          "coriander"
+        ],
+        "tags": [
+          "live-enzymes",
+          "iron-rich",
+          "vitamin-c",
+          "metabolism"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 50,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      },
+      {
+        "slotId": "slot_lunch_1788623135633_do2e",
+        "mealType": "lunch",
+        "label": "Lunch",
+        "suggestedTime": "13:00",
+        "foodId": "food_si_03",
+        "foodName": "Moong Dal Pongal with Steamed Greens",
+        "cuisine": "South Indian",
+        "servingSize": "1 bowl (220g)",
+        "calories": 360,
+        "protein": 14,
+        "carbohydrates": 56,
+        "fat": 9,
+        "fiber": 8,
+        "allergens": [
+          "tree nuts"
+        ],
+        "ingredients": [
+          "yellow moong dal",
+          "rice",
+          "black pepper",
+          "cumin",
+          "ginger",
+          "spinach",
+          "cashews",
+          "ghee"
+        ],
+        "tags": [
+          "easy-to-digest",
+          "comfort-food",
+          "high-protein"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 35,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      },
+      {
+        "slotId": "slot_snack_1788623135634_aydd",
+        "mealType": "snack",
+        "label": "Evening Refreshment",
+        "suggestedTime": "17:00",
+        "foodId": "food_si_06",
+        "foodName": "Sundal (Spiced Boiled Chickpeas & Coconut)",
+        "cuisine": "South Indian",
+        "servingSize": "1 bowl (120g)",
+        "calories": 195,
+        "protein": 9,
+        "carbohydrates": 28,
+        "fat": 5,
+        "fiber": 7,
+        "allergens": [
+          "coconut"
+        ],
+        "ingredients": [
+          "white chickpeas",
+          "grated coconut",
+          "green chillies",
+          "mustard seeds",
+          "curry leaves",
+          "hing"
+        ],
+        "tags": [
+          "high-protein",
+          "clean-snack",
+          "fiber"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 20,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      },
+      {
+        "slotId": "slot_dinner_1788623135634_6qn1",
+        "mealType": "dinner",
+        "label": "Dinner",
+        "suggestedTime": "20:30",
+        "foodId": "food_ni_02",
+        "foodName": "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
+        "cuisine": "North Indian",
+        "servingSize": "1 bowl dal + 1 cup brown rice + 1/2 cup raita",
+        "calories": 490,
+        "protein": 19,
+        "carbohydrates": 77,
+        "fat": 11,
+        "fiber": 12,
+        "allergens": [
+          "milk"
+        ],
+        "ingredients": [
+          "yellow toor dal",
+          "fresh spinach",
+          "brown rice",
+          "plain low-fat curd",
+          "cucumber",
+          "cumin",
+          "garlic"
+        ],
+        "tags": [
+          "iron-rich",
+          "gut-friendly",
+          "high-fiber",
+          "anemia-friendly"
+        ],
+        "confidence": "HIGH",
+        "scoreBreakdown": {
+          "nutritionFit": 35,
+          "goalFit": 15,
+          "preferenceFit": 10,
+          "scheduleFit": 30,
+          "cuisineFit": 25,
+          "budgetFit": 5,
+          "varietyScore": 10,
+          "convenienceScore": 10,
+          "feedbackScore": 0
+        },
+        "completed": false
+      }
+    ],
+    "activityPlan": {
+      "targetDailySteps": 4700,
+      "baselineSteps": 3500,
+      "progressionNote": "Targeting a gradual, sustainable +1200 steps increase without extreme jumps.",
+      "activeMinutesGoal": 25,
+      "recommendedWorkout": {
+        "_id": "id_1788365426687_0xqxv4f",
+        "exerciseId": "ex_home_01",
+        "name": "Beginner Low-Impact Full Body Circuit",
+        "category": "Home workout",
+        "durationMinutes": 20,
+        "difficulty": "Beginner",
+        "equipment": "Sturdy chair, wall, mat",
+        "instructions": [
+          "Chair squats (sit down gently and stand up tall) — 10 reps.",
+          "Wall push-ups or counter push-ups — 10 reps.",
+          "Standing calf raises holding chair back — 15 reps.",
+          "Glute bridges lying on back — 12 reps.",
+          "Rest 60 seconds and repeat 2-3 rounds."
+        ],
+        "safetyNotes": [
+          "Keep knees tracking in line with toes; avoid breath holding."
+        ],
+        "contraindications": [
+          "Severe acute joint swelling"
+        ],
+        "targetAreas": [
+          "Quadriceps",
+          "Glutes",
+          "Chest",
+          "Core"
+        ],
+        "createdAt": "2026-09-02T16:10:26.687Z",
+        "updatedAt": "2026-09-05T15:45:35.614Z"
+      },
+      "movementBreaks": [
+        {
+          "time": "11:00",
+          "title": "Mid-Morning Spine & Shoulder Release",
+          "durationMinutes": 5,
+          "action": "Stand up, roll shoulders, and stretch chest."
+        },
+        {
+          "time": "15:30",
+          "title": "Afternoon Circulation Walk",
+          "durationMinutes": 10,
+          "action": "Short stroll to refresh mental focus and leg circulation."
+        }
+      ]
+    },
+    "sleepPlan": {
+      "targetBedtime": "23:00",
+      "targetWakeTime": "07:00",
+      "estimatedDurationHours": 7.5,
+      "windDownStartTime": "22:15",
+      "checklist": [
+        {
+          "id": "wind_1",
+          "task": "Dim bright overhead lights & enable warm night mode",
+          "time": "22:15"
+        },
+        {
+          "id": "wind_2",
+          "task": "Screen curfew: stow phone, laptop & TV away",
+          "time": "22:30"
+        },
+        {
+          "id": "wind_3",
+          "task": "Sip a warm herbal infusion or water (avoid caffeine)",
+          "time": "Before bed"
+        },
+        {
+          "id": "wind_4",
+          "task": "4-7-8 deep diaphragmatic breathing or light reading",
+          "time": "15 mins before bed"
+        }
+      ],
+      "safetyNotice": "This sleep routine supports healthy circadian habits. Nourish360 does not diagnose sleep disorders. If experiencing persistent insomnia or daytime apnea, consult a qualified physician."
+    },
+    "hydrationPlan": {
+      "targetLiters": 2,
+      "targetGlasses": 8,
+      "glassVolumeMl": 250,
+      "professionalReviewRequired": false,
+      "guidanceMessage": "Targeting approximately 2 Liters (8 glasses) spaced evenly across your day.",
+      "reminders": [
+        {
+          "time": "07:30",
+          "note": "Morning awakening glass (room temperature)"
+        },
+        {
+          "time": "11:00",
+          "note": "Mid-morning hydration check"
+        },
+        {
+          "time": "14:30",
+          "note": "Afternoon hydration recharge"
+        },
+        {
+          "time": "18:00",
+          "note": "Early evening water"
+        }
+      ]
+    },
+    "habits": [
+      {
+        "_id": "id_1788365426702_u97pdj8",
+        "habitId": "habit_post_meal_walk",
+        "title": "10-Minute Post-Meal Stroll",
+        "category": "Movement",
+        "description": "Take an easy, gentle walk after your largest meal to aid digestion and support healthy glucose regulation.",
+        "frequency": "daily",
+        "icon": "Footprints",
+        "createdAt": "2026-09-02T16:10:26.702Z",
+        "updatedAt": "2026-09-05T15:45:35.621Z",
+        "completedToday": false
+      },
+      {
+        "_id": "id_1788365426704_gcwgpqr",
+        "habitId": "habit_veggie_portion",
+        "title": "Colorful Veggie Inclusion",
+        "category": "Nutrition",
+        "description": "Ensure at least half your lunch or dinner plate is filled with colorful cooked or fresh vegetables.",
+        "frequency": "daily",
+        "icon": "Salad",
+        "createdAt": "2026-09-02T16:10:26.704Z",
+        "updatedAt": "2026-09-05T15:45:35.624Z",
+        "completedToday": false
+      },
+      {
+        "_id": "id_1788365426691_05851k0",
+        "habitId": "habit_water_morning",
+        "title": "Hydrate Upon Waking",
+        "category": "Hydration",
+        "description": "Drink 1-2 glasses of warm or room-temperature water before your morning tea, coffee, or breakfast.",
+        "frequency": "daily",
+        "icon": "Droplets",
+        "createdAt": "2026-09-02T16:10:26.691Z",
+        "updatedAt": "2026-09-05T15:45:35.618Z",
+        "completedToday": false
+      },
+      {
+        "_id": "id_1788365426699_dpfulzj",
+        "habitId": "habit_sunlight_walk",
+        "title": "10-Minute Morning Daylight",
+        "category": "Movement",
+        "description": "Step outside within the first hour of waking to anchor your circadian rhythm and boost morning alertness.",
+        "frequency": "daily",
+        "icon": "Sun",
+        "createdAt": "2026-09-02T16:10:26.699Z",
+        "updatedAt": "2026-09-05T15:45:35.619Z",
+        "completedToday": false
+      }
+    ],
+    "explanations": [
+      {
+        "itemId": "food_sp_01",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (08:30).",
+          "✓ Matches your preferred cuisine (South Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      },
+      {
+        "itemId": "food_si_03",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (13:00).",
+          "✓ Matches your preferred cuisine (South Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      },
+      {
+        "itemId": "food_si_06",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (17:00).",
+          "✓ Matches your preferred cuisine (South Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      },
+      {
+        "itemId": "food_ni_02",
+        "reasons": [
+          "✓ Matches your selected Vegetarian dietary pattern.",
+          "✓ Cleared allergen safety filter: Free of peanuts.",
+          "✓ Aligned with your preferred meal timing (20:30).",
+          "✓ Matches your preferred cuisine (North Indian).",
+          "✓ Compatible with health condition guidelines (Known Low Hemoglobin / Iron Deficiency)."
+        ],
+        "confidence": "HIGH",
+        "disclaimer": "General lifestyle and wellness guidance voluntarily requested by you; not an individualized medical prescription."
+      }
+    ],
+    "auditTrail": {
+      "userId": "test_user_e2e_01",
+      "profileInputs": {
+        "age": 29,
+        "sex": "female",
+        "dietaryPattern": "Vegetarian",
+        "allergies": [
+          "peanuts"
+        ],
+        "conditions": [
+          "anemia"
+        ],
+        "goals": [
+          "Balanced eating",
+          "Improve activity"
+        ]
+      },
+      "rulesTriggered": [
+        "cond_rule_anemia"
+      ],
+      "foodsBlocked": [],
+      "foodsSelected": [
+        "Sprouted Green Moong & Pomegranate Salad",
+        "Moong Dal Pongal with Steamed Greens",
+        "Sundal (Spiced Boiled Chickpeas & Coconut)",
+        "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita"
+      ],
+      "safetyFlags": [],
+      "engineVersion": "1.2.0",
+      "ruleVersion": "2026.1"
+    }
+  }
+]
