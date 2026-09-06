@@ -74,7 +74,19 @@ export const login = async (req, res, next) => {
     }
 
     const token = generateToken(user._id);
-    const hasProfile = Boolean(await HealthProfile.findOne({ userId: user._id }));
+    const healthProfile = await HealthProfile.findOne({
+      $or: [{ userId: String(user._id) }, { userId: user._id }]
+    });
+    const hasProfile = Boolean(healthProfile);
+    
+    // Prioritize user's custom profile name and sync back to User document
+    let displayName = user.name;
+    if (healthProfile && healthProfile.name && healthProfile.name.trim()) {
+      displayName = healthProfile.name.trim();
+      if (user.name !== displayName) {
+        await User.findOneAndUpdate({ _id: user._id }, { name: displayName });
+      }
+    }
 
     res.json({
       success: true,
@@ -82,7 +94,7 @@ export const login = async (req, res, next) => {
       hasProfile,
       user: {
         id: user._id,
-        name: user.name,
+        name: displayName,
         email: user.email,
         role: user.role,
         settings: user.settings
@@ -95,17 +107,25 @@ export const login = async (req, res, next) => {
 
 export const getMe = async (req, res, next) => {
   try {
-    const user = await User.findById(req.user.id);
+    const user = await User.findById(req.user.id || req.user._id);
     if (!user) {
       return res.status(404).json({ success: false, message: 'User not found.' });
     }
-    const hasProfile = Boolean(await HealthProfile.findOne({ userId: user._id }));
+    const healthProfile = await HealthProfile.findOne({
+      $or: [{ userId: String(user._id) }, { userId: user._id }]
+    });
+    const hasProfile = Boolean(healthProfile);
+
+    let displayName = user.name;
+    if (healthProfile && healthProfile.name && healthProfile.name.trim()) {
+      displayName = healthProfile.name.trim();
+    }
 
     res.json({
       success: true,
       user: {
         id: user._id,
-        name: user.name,
+        name: displayName,
         email: user.email,
         role: user.role,
         settings: user.settings
