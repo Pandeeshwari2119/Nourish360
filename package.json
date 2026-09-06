@@ -1,21 +1,23 @@
 {
-    "name":  "nourish360",
-    "version":  "1.0.0",
-    "description":  "Nourish360 â€” Complete Full-Stack Personalized Health \u0026 Wellness Platform",
-    "scripts":  {
-                    "dev:backend":  "cd backend \u0026\u0026 npm run dev",
-                    "dev:frontend":  "cd frontend \u0026\u0026 npm run dev",
-                    "start":  "node run-app.js",
-                    "seed":  "cd backend \u0026\u0026 npm run seed",
-                    "test":  "cd backend \u0026\u0026 npm test"
-                },
-    "keywords":  [
-                     "wellness",
-                     "health",
-                     "fullstack",
-                     "recommendation-engine"
-                 ],
-    "author":  "Nourish360 Team",
-    "license":  "MIT",
-    "type":  "module"
+  "name": "nourish360",
+  "version": "1.2.0",
+  "description": "Nourish360 — Complete Full-Stack Personalized Health & Wellness Platform",
+  "type": "module",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "test": "cd backend && npm test"
+  },
+  "keywords": [
+    "wellness",
+    "health",
+    "fullstack",
+    "recommendation-engine"
+  ],
+  "author": "Nourish360 Team",
+  "license": "MIT"
 }
