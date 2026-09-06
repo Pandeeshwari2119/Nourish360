@@ -1,4 +1,4 @@
-﻿// AuthContext.jsx
+// AuthContext.jsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { api } from '../services/api';
 
@@ -59,6 +59,11 @@ export const AuthProvider = ({ children }) => {
     return { success: false, message: data.message };
   };
 
+  const updateUserSession = (userData, profileExists = true) => {
+    if (userData) setUser(userData);
+    setHasProfile(profileExists);
+  };
+
   const logout = () => {
     localStorage.removeItem('nourish360_token');
     setToken(null);
@@ -89,6 +94,7 @@ export const AuthProvider = ({ children }) => {
       logout,
       updateSettings,
       setHasProfile,
+      updateUserSession,
       refreshAuth: checkAuth
     }}>
       {children}

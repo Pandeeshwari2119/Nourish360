@@ -25,7 +25,7 @@ export const saveProfile = async (req, res, next) => {
     }
 
     const profileData = {
-      name: name ? name.trim() : req.user.name,
+      name: name ? name.trim() : (updatedUser?.name || req.user.name),
       ...restProfile,
       userId: req.user._id
     };
@@ -39,11 +39,19 @@ export const saveProfile = async (req, res, next) => {
     // Automatically generate recommendation plan upon profile submission
     const plan = await generatePersonalizedPlan(saved, req.user._id);
 
+    const safeUser = {
+      id: updatedUser?._id || req.user._id,
+      name: updatedUser?.name || req.user.name,
+      email: updatedUser?.email || req.user.email,
+      role: updatedUser?.role || req.user.role,
+      settings: updatedUser?.settings || req.user.settings
+    };
+
     res.status(200).json({
       success: true,
       message: 'Health profile saved and personalized plan generated successfully.',
       profile: saved,
-      user: updatedUser,
+      user: safeUser,
       plan
     });
   } catch (err) {

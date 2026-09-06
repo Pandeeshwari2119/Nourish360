@@ -16,7 +16,7 @@ import { Step9Review } from '../components/onboarding/steps/Step9Review';
 import { ArrowLeft, ArrowRight, Sparkles, AlertCircle } from 'lucide-react';
 
 export const OnboardingPage = () => {
-  const { user, setHasProfile, refreshAuth } = useAuth();
+  const { user, updateUserSession } = useAuth();
   const { setPlan } = useWellness();
   const navigate = useNavigate();
 
@@ -38,7 +38,7 @@ export const OnboardingPage = () => {
     conditions: [],
     hasNoConditions: false,
     allergies: [],
-    dietaryPattern: 'Vegetarian',
+    dietaryPattern: 'Non-vegetarian',
     otherRestrictions: [],
     foodPreferences: { favorites: [], disliked: [], avoids: [] },
     breakfastTime: '08:30',
@@ -61,7 +61,8 @@ export const OnboardingPage = () => {
     sleepConsistency: 'moderate',
     screenUseBeforeBed: true,
     nightEating: false,
-    goals: ['Balanced eating', 'Improve daily routine', 'Improve activity']
+    goals: ['Balanced nutrition', 'Sustainable energy', 'Improve movement'],
+    customGoal: ''
   });
 
   const updateField = (field, value) => {
@@ -70,11 +71,12 @@ export const OnboardingPage = () => {
 
   const toggleArrayItem = (field, item) => {
     setFormData(prev => {
-      const current = prev[field] || [];
-      const updated = current.includes(item)
-        ? current.filter(x => x !== item)
-        : [...current, item];
-      return { ...prev, [field]: updated };
+      const arr = prev[field] || [];
+      const exists = arr.includes(item);
+      return {
+        ...prev,
+        [field]: exists ? arr.filter(i => i !== item) : [...arr, item]
+      };
     });
   };
 
@@ -94,9 +96,14 @@ export const OnboardingPage = () => {
     try {
       const res = await api.saveProfile(formData);
       if (res.success) {
-        setHasProfile(true);
-        if (refreshAuth) await refreshAuth();
-        if (res.plan) setPlan(res.plan);
+        if (res.user) {
+          updateUserSession(res.user, true);
+        } else {
+          updateUserSession(user, true);
+        }
+        if (res.plan) {
+          setPlan(res.plan);
+        }
       } else {
         setIsGenerating(false);
         setError(res.message || 'Failed to save profile.');
@@ -111,7 +118,7 @@ export const OnboardingPage = () => {
     return (
       <GenerationAnimation
         onComplete={() => {
-          navigate('/dashboard');
+          navigate('/dashboard', { replace: true });
         }}
       />
     );
