@@ -1,18 +1,20 @@
-﻿// foodController.js
+// foodController.js
 import { Food } from '../models/schemas.js';
+import { foodsData } from '../data/foodsData.js';
 
 export const searchFoods = async (req, res, next) => {
   try {
-    const { q, cuisine, mealType, vegetarian, vegan, allergenFree } = req.query;
+    const { q, query, cuisine, mealType, vegetarian, vegan, allergenFree } = req.query;
+    const searchTerm = (q || query || '').toLowerCase().trim();
     const allFoods = await Food.find({});
 
     let results = allFoods.filter(food => {
-      if (q) {
-        const query = q.toLowerCase();
-        const matchesName = food.name.toLowerCase().includes(query);
-        const matchesIngredient = (food.ingredients || []).some(i => i.toLowerCase().includes(query));
-        const matchesTags = (food.tags || []).some(t => t.toLowerCase().includes(query));
-        if (!matchesName && !matchesIngredient && !matchesTags) return false;
+      if (searchTerm) {
+        const matchesName = food.name.toLowerCase().includes(searchTerm);
+        const matchesIngredient = (food.ingredients || []).some(i => i.toLowerCase().includes(searchTerm));
+        const matchesTags = (food.tags || []).some(t => t.toLowerCase().includes(searchTerm));
+        const matchesCategory = (food.category || '').toLowerCase().includes(searchTerm);
+        if (!matchesName && !matchesIngredient && !matchesTags && !matchesCategory) return false;
       }
 
       if (cuisine && cuisine !== 'All') {
@@ -36,6 +38,18 @@ export const searchFoods = async (req, res, next) => {
     });
 
     res.json({ success: true, count: results.length, foods: results });
+  } catch (err) {
+    next(err);
+  }
+};
+
+export const seedLiveFoods = async (req, res, next) => {
+  try {
+    for (const food of foodsData) {
+      await Food.findOneAndUpdate({ foodId: food.foodId }, food, { upsert: true });
+    }
+    const count = await Food.countDocuments({});
+    res.json({ success: true, message: `Successfully seeded ${foodsData.length} verified foods! Total in database: ${count}` });
   } catch (err) {
     next(err);
   }
