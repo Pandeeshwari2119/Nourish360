@@ -1,5 +1,5 @@
-﻿// profileController.js
-import { HealthProfile } from '../models/schemas.js';
+// profileController.js
+import { HealthProfile, User } from '../models/schemas.js';
 import { generatePersonalizedPlan } from '../services/recommendation/index.js';
 
 export const getProfile = async (req, res, next) => {
@@ -13,8 +13,20 @@ export const getProfile = async (req, res, next) => {
 
 export const saveProfile = async (req, res, next) => {
   try {
+    const { name, ...restProfile } = req.body;
+
+    let updatedUser = req.user;
+    if (name && name.trim()) {
+      updatedUser = await User.findOneAndUpdate(
+        { _id: req.user._id },
+        { name: name.trim() },
+        { new: true }
+      );
+    }
+
     const profileData = {
-      ...req.body,
+      name: name ? name.trim() : req.user.name,
+      ...restProfile,
       userId: req.user._id
     };
 
@@ -31,6 +43,7 @@ export const saveProfile = async (req, res, next) => {
       success: true,
       message: 'Health profile saved and personalized plan generated successfully.',
       profile: saved,
+      user: updatedUser,
       plan
     });
   } catch (err) {

@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useWellness } from '../context/WellnessContext';
@@ -16,7 +16,7 @@ import { Step9Review } from '../components/onboarding/steps/Step9Review';
 import { ArrowLeft, ArrowRight, Sparkles, AlertCircle } from 'lucide-react';
 
 export const OnboardingPage = () => {
-  const { user, setHasProfile } = useAuth();
+  const { user, setHasProfile, refreshAuth } = useAuth();
   const { setPlan } = useWellness();
   const navigate = useNavigate();
 
@@ -95,6 +95,7 @@ export const OnboardingPage = () => {
       const res = await api.saveProfile(formData);
       if (res.success) {
         setHasProfile(true);
+        if (refreshAuth) await refreshAuth();
         if (res.plan) setPlan(res.plan);
       } else {
         setIsGenerating(false);
