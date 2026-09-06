@@ -52,6 +52,8 @@ export const Navbar = () => {
     navLinks.push({ to: '/admin', label: 'Admin Panel', icon: ShieldAlert });
   }
 
+  const isOnboarding = location.pathname === '/onboarding';
+
   return (
     <>
       <header className="sticky top-0 z-30 bg-cream-100/90 backdrop-blur-md border-b border-stone-200/60 px-4 md:px-8 py-3 transition-all">
@@ -85,10 +87,12 @@ export const Navbar = () => {
           {/* Right Actions */}
           {user ? (
             <div className="flex items-center gap-2 sm:gap-4">
-              <div className="hidden sm:block text-right">
-                <div className="text-xs text-stone-500 font-medium">{getGreeting()},</div>
-                <div className="text-sm font-semibold text-stone-800">{user.name} 🌿</div>
-              </div>
+              {!isOnboarding && (
+                <div className="hidden sm:block text-right">
+                  <div className="text-xs text-stone-500 font-medium">{getGreeting()},</div>
+                  <div className="text-sm font-semibold text-stone-800">{user.name} 🌿</div>
+                </div>
+              )}
 
               <div className="flex items-center gap-1.5">
                 <Link
