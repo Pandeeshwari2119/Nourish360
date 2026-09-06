@@ -19,7 +19,7 @@ export const WellnessProvider = ({ children }) => {
   };
 
   const fetchWellnessData = async (forceRefresh = false) => {
-    if (!token || !hasProfile) return;
+    if (!token) return;
     setLoading(true);
     try {
       const [planRes, progRes, habRes] = await Promise.all([
@@ -61,7 +61,7 @@ export const WellnessProvider = ({ children }) => {
 
   useEffect(() => {
     fetchWellnessData();
-  }, [token, hasProfile]);
+  }, [token]);
 
   const swapMeal = async (slotId, newFoodId) => {
     try {

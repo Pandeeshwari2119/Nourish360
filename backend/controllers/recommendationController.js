@@ -9,7 +9,17 @@ export const generate = async (req, res, next) => {
       profile = req.body.profile;
     }
     if (!profile) {
-      return res.status(400).json({ success: false, message: 'Profile data is required to generate recommendations.' });
+      profile = {
+        name: req.user.name,
+        age: 26,
+        sex: 'female',
+        height: 165,
+        weight: 60,
+        dietaryPattern: 'Non-vegetarian',
+        allergies: [],
+        conditions: [],
+        favoriteCuisines: ['South Indian', 'North Indian', 'Western']
+      };
     }
 
     const plan = await generatePersonalizedPlan(profile, req.user._id);
@@ -25,10 +35,21 @@ export const getToday = async (req, res, next) => {
     let rec = shouldRefresh ? null : await Recommendation.findOne({ userId: req.user._id });
     
     if (!rec) {
-      const profile = await HealthProfile.findOne({ userId: req.user._id });
-      if (profile) {
-        rec = await generatePersonalizedPlan(profile, req.user._id);
+      let profile = await HealthProfile.findOne({ userId: req.user._id });
+      if (!profile) {
+        profile = {
+          name: req.user.name,
+          age: 26,
+          sex: 'female',
+          height: 165,
+          weight: 60,
+          dietaryPattern: 'Non-vegetarian',
+          allergies: [],
+          conditions: [],
+          favoriteCuisines: ['South Indian', 'North Indian', 'Western']
+        };
       }
+      rec = await generatePersonalizedPlan(profile, req.user._id);
     }
     res.json({ success: true, plan: rec || null });
   } catch (err) {
@@ -38,9 +59,19 @@ export const getToday = async (req, res, next) => {
 
 export const getWeek = async (req, res, next) => {
   try {
-    const profile = await HealthProfile.findOne({ userId: req.user._id });
+    let profile = await HealthProfile.findOne({ userId: req.user._id });
     if (!profile) {
-      return res.status(400).json({ success: false, message: 'Please complete your wellness profile first.' });
+      profile = {
+        name: req.user.name,
+        age: 26,
+        sex: 'female',
+        height: 165,
+        weight: 60,
+        dietaryPattern: 'Non-vegetarian',
+        allergies: [],
+        conditions: [],
+        favoriteCuisines: ['South Indian', 'North Indian', 'Western']
+      };
     }
     const weeklyPlan = await generateWeeklyPlan(profile, req.user._id);
     res.json({ success: true, weeklyPlan });

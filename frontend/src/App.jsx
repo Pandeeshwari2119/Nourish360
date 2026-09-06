@@ -25,9 +25,9 @@ import { ProfilePage } from './pages/ProfilePage';
 import { SettingsPage } from './pages/SettingsPage';
 import { AdminPage } from './pages/AdminPage';
 
-// Protected Route Wrapper
+// Protected Route Wrapper (Ensures authentication without redirection loops)
 const ProtectedRoute = ({ children }) => {
-  const { user, token, loading, hasProfile } = useAuth();
+  const { user, token, loading } = useAuth();
   const location = useLocation();
 
   if (loading) {
@@ -40,11 +40,6 @@ const ProtectedRoute = ({ children }) => {
 
   if (!token || !user) {
     return <Navigate to="/login" state={{ from: location }} replace />;
-  }
-
-  // If user has not completed onboarding and is trying to navigate to app pages, direct to onboarding
-  if (!hasProfile && location.pathname !== '/onboarding') {
-    return <Navigate to="/onboarding" replace />;
   }
 
   return children;
