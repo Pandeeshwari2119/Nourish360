@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useWellness } from '../context/WellnessContext';
 import { SafetyBadge } from '../components/common/SafetyBadge';
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 export const DashboardPage = () => {
   const { user } = useAuth();
-  const { plan, progress, habits, toggleHabit, logWater, refreshPlan, loading } = useWellness();
+  const { plan, progress, habits, toggleHabit, logWater, refreshPlan, loading, profile } = useWellness();
   const [loggingWater, setLoggingWater] = useState(false);
 
   const handleWaterClick = async (ml) => {
@@ -26,13 +26,15 @@ export const DashboardPage = () => {
     return 'Good evening';
   };
 
+  const displayName = profile?.name || user?.name || 'Friend';
+
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 space-y-8">
       {/* Top Welcome Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h1 className="font-serif font-bold text-3xl md:text-4xl text-stone-900 tracking-tight">
-            {getGreeting()}, {user?.name || 'Friend'} 🌿
+            {getGreeting()}, {displayName} 🌿
           </h1>
           <p className="text-xs md:text-sm text-stone-500 mt-1">
             Here is your explainable wellness routine for today.

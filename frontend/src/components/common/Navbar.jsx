@@ -1,7 +1,8 @@
 // Navbar.jsx
 import React, { useState } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { useWellness } from '../../context/WellnessContext';
 import { 
   Sparkles, 
   LogOut, 
@@ -54,6 +55,9 @@ export const Navbar = () => {
 
   const isOnboarding = location.pathname === '/onboarding';
 
+  const { profile } = useWellness() || {};
+  const displayName = profile?.name || user?.name || 'Friend';
+
   return (
     <>
       <header className="sticky top-0 z-30 bg-cream-100/90 backdrop-blur-md border-b border-stone-200/60 px-4 md:px-8 py-3 transition-all">
@@ -90,7 +94,7 @@ export const Navbar = () => {
               {!isOnboarding && (
                 <div className="hidden sm:block text-right">
                   <div className="text-xs text-stone-500 font-medium">{getGreeting()},</div>
-                  <div className="text-sm font-semibold text-stone-800">{user.name} 🌿</div>
+                  <div className="text-sm font-semibold text-stone-800">{displayName} 🌿</div>
                 </div>
               )}
 

@@ -7,6 +7,7 @@ const WellnessContext = createContext(null);
 
 export const WellnessProvider = ({ children }) => {
   const { user, token, hasProfile } = useAuth();
+  const [profile, setProfile] = useState(null);
   const [plan, setPlan] = useState(null);
   const [progress, setProgress] = useState(null);
   const [habits, setHabits] = useState([]);
@@ -22,11 +23,16 @@ export const WellnessProvider = ({ children }) => {
     if (!token) return;
     setLoading(true);
     try {
-      const [planRes, progRes, habRes] = await Promise.all([
+      const [planRes, progRes, habRes, profRes] = await Promise.all([
         forceRefresh ? api.generatePlan() : api.getTodayPlan(),
         api.getProgress(),
-        api.getHabits()
+        api.getHabits(),
+        api.getProfile()
       ]);
+
+      if (profRes && profRes.success && profRes.profile) {
+        setProfile(profRes.profile);
+      }
 
       if (planRes.success && planRes.plan) {
         let currentPlan = planRes.plan;
@@ -142,6 +148,8 @@ export const WellnessProvider = ({ children }) => {
 
   return (
     <WellnessContext.Provider value={{
+      profile,
+      setProfile,
       plan,
       setPlan,
       progress,
