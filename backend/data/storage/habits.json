@@ -8,7 +8,7 @@
     "frequency": "daily",
     "icon": "Droplets",
     "createdAt": "2026-09-02T16:10:26.691Z",
-    "updatedAt": "2026-09-05T15:45:35.618Z"
+    "updatedAt": "2026-09-06T12:39:59.380Z"
   },
   {
     "_id": "id_1788365426699_dpfulzj",
@@ -19,7 +19,7 @@
     "frequency": "daily",
     "icon": "Sun",
     "createdAt": "2026-09-02T16:10:26.699Z",
-    "updatedAt": "2026-09-05T15:45:35.619Z"
+    "updatedAt": "2026-09-06T12:39:59.382Z"
   },
   {
     "_id": "id_1788365426701_iaf3enn",
@@ -30,7 +30,7 @@
     "frequency": "daily",
     "icon": "Moon",
     "createdAt": "2026-09-02T16:10:26.701Z",
-    "updatedAt": "2026-09-05T15:45:35.620Z"
+    "updatedAt": "2026-09-06T12:39:59.383Z"
   },
   {
     "_id": "id_1788365426702_u97pdj8",
@@ -41,7 +41,7 @@
     "frequency": "daily",
     "icon": "Footprints",
     "createdAt": "2026-09-02T16:10:26.702Z",
-    "updatedAt": "2026-09-05T15:45:35.621Z"
+    "updatedAt": "2026-09-06T12:39:59.384Z"
   },
   {
     "_id": "id_1788365426703_trewf5x",
@@ -52,7 +52,7 @@
     "frequency": "daily",
     "icon": "Utensils",
     "createdAt": "2026-09-02T16:10:26.703Z",
-    "updatedAt": "2026-09-05T15:45:35.622Z"
+    "updatedAt": "2026-09-06T12:39:59.385Z"
   },
   {
     "_id": "id_1788365426703_5io8u1m",
@@ -63,7 +63,7 @@
     "frequency": "daily",
     "icon": "Activity",
     "createdAt": "2026-09-02T16:10:26.703Z",
-    "updatedAt": "2026-09-05T15:45:35.623Z"
+    "updatedAt": "2026-09-06T12:39:59.386Z"
   },
   {
     "_id": "id_1788365426704_gcwgpqr",
@@ -74,7 +74,7 @@
     "frequency": "daily",
     "icon": "Salad",
     "createdAt": "2026-09-02T16:10:26.704Z",
-    "updatedAt": "2026-09-05T15:45:35.624Z"
+    "updatedAt": "2026-09-06T12:39:59.387Z"
   },
   {
     "_id": "id_1788365426705_bya9kdh",
@@ -85,6 +85,6 @@
     "frequency": "daily",
     "icon": "Heart",
     "createdAt": "2026-09-02T16:10:26.705Z",
-    "updatedAt": "2026-09-05T15:45:35.625Z"
+    "updatedAt": "2026-09-06T12:39:59.388Z"
   }
 ]

@@ -48,15 +48,23 @@ export const Timeline = ({ items = [] }) => {
 
         return (
           <div key={item.id || index} className="relative group">
-            {/* Timeline Node Point */}
-            <div className={`absolute -left-6 md:-left-8 top-3.5 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white shadow-sm flex items-center justify-center ${style} transition transform group-hover:scale-110`}>
-              <Icon className="w-3 h-3 md:w-3.5 md:h-3.5" />
-            </div>
+            {/* Timeline Node Point (Clickable) */}
+            <button
+              onClick={() => toggleTimelineItem(item.id)}
+              className={`absolute -left-6 md:-left-8 top-3.5 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white shadow-sm flex items-center justify-center ${style} transition transform group-hover:scale-110 cursor-pointer`}
+              title="Click to toggle complete"
+            >
+              {item.completed ? (
+                <CheckCircle2 className="w-4 h-4 text-emerald-700" />
+              ) : (
+                <Icon className="w-3 h-3 md:w-3.5 md:h-3.5" />
+              )}
+            </button>
 
             {/* Timeline Card */}
             <div className={`p-4 md:p-5 rounded-3xl border transition-all ${
               item.completed 
-                ? 'bg-stone-50/70 border-stone-200/60 opacity-60' 
+                ? 'bg-stone-50/80 border-stone-200/60 opacity-60' 
                 : 'bg-white/95 border-stone-200/80 shadow-soft hover:shadow-soft-lg hover:border-forest-500/40'
             }`}>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
@@ -73,7 +81,7 @@ export const Timeline = ({ items = [] }) => {
                   {item.explanation && (
                     <button
                       onClick={() => setSelectedWhy(item.explanation)}
-                      className="text-[11px] text-stone-500 hover:text-forest-700 font-medium px-2 py-1 rounded-lg hover:bg-stone-100 transition flex items-center gap-1"
+                      className="text-[11px] text-stone-500 hover:text-forest-700 font-medium px-2 py-1 rounded-lg hover:bg-stone-100 transition flex items-center gap-1 cursor-pointer"
                       title="Why was this recommended?"
                     >
                       <HelpCircle className="w-3.5 h-3.5" />
@@ -90,7 +98,7 @@ export const Timeline = ({ items = [] }) => {
                         foodName: item.foodDetails.name,
                         mealType: item.foodDetails.mealType || item.label.toLowerCase()
                       })}
-                      className="text-[11px] text-stone-600 hover:text-forest-800 font-medium px-2 py-1 rounded-lg bg-stone-100 hover:bg-stone-200 transition flex items-center gap-1"
+                      className="text-[11px] text-stone-600 hover:text-forest-800 font-medium px-2.5 py-1 rounded-lg bg-stone-100 hover:bg-stone-200 transition flex items-center gap-1 cursor-pointer"
                       title="Swap this meal"
                     >
                       <RefreshCw className="w-3 h-3" />
@@ -98,26 +106,37 @@ export const Timeline = ({ items = [] }) => {
                     </button>
                   )}
 
+                  {/* Large Checkbox Touch Button */}
                   <button
-                    onClick={() => toggleTimelineItem(item.id)}
-                    className="p-1 rounded-full text-stone-400 hover:text-forest-600 transition"
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleTimelineItem(item.id);
+                    }}
+                    className="p-1.5 rounded-xl hover:bg-stone-100 text-stone-400 hover:text-forest-600 transition cursor-pointer flex items-center justify-center"
                     title={item.completed ? 'Mark as incomplete' : 'Mark as complete'}
+                    aria-label="Toggle task completion"
                   >
                     {item.completed ? (
                       <CheckCircle2 className="w-5 h-5 text-emerald-600" />
                     ) : (
-                      <Circle className="w-5 h-5" />
+                      <Circle className="w-5 h-5 text-stone-400 hover:text-stone-600" />
                     )}
                   </button>
                 </div>
               </div>
 
-              <h4 className={`text-sm md:text-base font-semibold ${item.completed ? 'line-through text-stone-400' : 'text-stone-800'}`}>
-                {item.title}
-              </h4>
-              <p className="text-xs text-stone-500 mt-1 leading-relaxed">
-                {item.description}
-              </p>
+              <div 
+                onClick={() => toggleTimelineItem(item.id)}
+                className="cursor-pointer select-none"
+              >
+                <h4 className={`text-sm md:text-base font-semibold ${item.completed ? 'line-through text-stone-400' : 'text-stone-800'}`}>
+                  {item.title}
+                </h4>
+                <p className="text-xs text-stone-500 mt-1 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
 
               {item.foodDetails && (
                 <div className="flex flex-wrap items-center gap-2 md:gap-3 mt-3 pt-2.5 border-t border-stone-100 text-[11px] text-stone-600">

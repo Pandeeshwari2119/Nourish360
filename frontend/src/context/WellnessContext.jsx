@@ -1,4 +1,4 @@
-﻿// WellnessContext.jsx
+// WellnessContext.jsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { api } from '../services/api';
 import { useAuth } from './AuthContext';
@@ -28,7 +28,7 @@ export const WellnessProvider = ({ children }) => {
       if (progRes.success) {
         setProgress(progRes);
       }
-      if (habRes.success) {
+      if (habRes.success && habRes.habits) {
         setHabits(habRes.habits);
       }
     } catch (e) {
@@ -57,20 +57,35 @@ export const WellnessProvider = ({ children }) => {
     }
   };
 
+  const toggleTimelineItem = (itemId) => {
+    setPlan(prev => {
+      if (!prev || !prev.dailyTimeline) return prev;
+      const updated = prev.dailyTimeline.map(item => {
+        if (item.id === itemId) {
+          return { ...item, completed: !item.completed };
+        }
+        return item;
+      });
+      return { ...prev, dailyTimeline: updated };
+    });
+  };
+
   const toggleHabit = async (habitId) => {
+    // Optimistic UI update
+    setHabits(prev => prev.map(h => 
+      h.habitId === habitId ? { ...h, completedToday: !h.completedToday } : h
+    ));
+
     try {
       const res = await api.toggleHabit(habitId);
       if (res.success) {
-        setHabits(prev => prev.map(h => 
-          h.habitId === habitId ? { ...h, completedToday: res.completed } : h
-        ));
         // Refresh progress
         const prog = await api.getProgress();
         if (prog.success) setProgress(prog);
         return true;
       }
     } catch (e) {
-      console.error(e);
+      console.error('Error toggling habit:', e);
     }
     return false;
   };
@@ -106,6 +121,7 @@ export const WellnessProvider = ({ children }) => {
       loading,
       refreshPlan: fetchWellnessData,
       swapMeal,
+      toggleTimelineItem,
       toggleHabit,
       logWater,
       submitFeedback

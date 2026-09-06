@@ -1,5 +1,7 @@
 export const foodsData = [
-  // --- South Indian ---
+  // ==========================================
+  // --- SOUTH INDIAN VEGETARIAN & VEGAN ---
+  // ==========================================
   {
     foodId: 'food_si_01',
     name: 'Steamed Idli with Sambar & Coconut Chutney',
@@ -201,7 +203,113 @@ export const foodsData = [
     sourceVersion: '2026.1'
   },
 
-  // --- North Indian ---
+  // ==========================================
+  // --- SOUTH INDIAN NON-VEGETARIAN & EGG ---
+  // ==========================================
+  {
+    foodId: 'food_si_nv_01',
+    name: 'South Indian Steamed Egg Dosa with Tomato-Ginger Chutney',
+    category: 'Breakfast',
+    cuisine: 'South Indian',
+    servingSize: '1 crisp egg dosa with 2 tbsp chutney',
+    calories: 360,
+    protein: 16,
+    carbohydrates: 42,
+    fat: 14,
+    fiber: 5,
+    sodium: 490,
+    sugar: 3,
+    micronutrients: { iron: 3.4, calcium: 75, vitaminD: 1.8, vitaminB12: 1.2, potassium: 380, magnesium: 52 },
+    allergens: ['eggs'],
+    ingredients: ['fermented rice & urad batter', 'fresh eggs', 'black pepper', 'curry leaves', 'tomatoes', 'ginger'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: true,
+    containsDairy: false,
+    mealTypes: ['breakfast', 'dinner'],
+    tags: ['high-protein', 'fermented', 'choline-rich', 'eggetarian-friendly'],
+    source: 'NIN / Indian Food Tables',
+    sourceVersion: '2026.1'
+  },
+  {
+    foodId: 'food_si_nv_02',
+    name: 'Chettinad Grilled Fish with Brown Rice & Cucumber Pachadi',
+    category: 'Main Course',
+    cuisine: 'South Indian',
+    servingSize: '1 grilled fish fillet (160g) + 1 cup brown rice + pachadi',
+    calories: 460,
+    protein: 38,
+    carbohydrates: 52,
+    fat: 12,
+    fiber: 7,
+    sodium: 520,
+    sugar: 3,
+    micronutrients: { iron: 3.6, calcium: 110, vitaminD: 12.5, vitaminB12: 4.2, potassium: 640, magnesium: 88 },
+    allergens: ['fish', 'milk'],
+    ingredients: ['seer fish / kingfish fillet', 'brown rice', 'curd', 'cucumber', 'black pepper', 'fennel', 'curry leaves', 'lemon'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: false,
+    containsDairy: true,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['omega-3', 'high-protein', 'heart-healthy', 'lean-fish'],
+    source: 'NIN Composition Tables',
+    sourceVersion: '2026.1'
+  },
+  {
+    foodId: 'food_si_nv_03',
+    name: 'Country Style Pepper Chicken with Whole Wheat Phulka & Rasam',
+    category: 'Main Course',
+    cuisine: 'South Indian',
+    servingSize: '1 bowl pepper chicken (180g) + 2 phulkas + warm rasam',
+    calories: 470,
+    protein: 40,
+    carbohydrates: 48,
+    fat: 13,
+    fiber: 8,
+    sodium: 540,
+    sugar: 3,
+    micronutrients: { iron: 4.8, calcium: 80, vitaminD: 0.3, vitaminB12: 1.1, potassium: 720, magnesium: 92 },
+    allergens: ['wheat'],
+    ingredients: ['boneless chicken breast', 'whole wheat flour', 'crushed black pepper', 'shallots', 'garlic', 'curry leaves', 'tomatoes'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: false,
+    containsDairy: false,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['high-protein', 'iron-rich', 'immunity-boost', 'lean-poultry'],
+    source: 'NIN Composition Tables',
+    sourceVersion: '2026.1'
+  },
+  {
+    foodId: 'food_si_nv_04',
+    name: 'Boiled Egg & Sprouted Moong Sundal with Curry Leaves',
+    category: 'Snack',
+    cuisine: 'South Indian',
+    servingSize: '2 boiled egg whites + 1 cup sprouted moong sundal',
+    calories: 220,
+    protein: 18,
+    carbohydrates: 24,
+    fat: 5,
+    fiber: 7,
+    sodium: 280,
+    sugar: 3,
+    micronutrients: { iron: 3.8, calcium: 60, vitaminD: 1.2, vitaminB12: 0.9, potassium: 440, magnesium: 65 },
+    allergens: ['eggs'],
+    ingredients: ['sprouted green moong', 'boiled eggs', 'mustard seeds', 'green chillies', 'curry leaves', 'lemon juice'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: true,
+    containsDairy: false,
+    mealTypes: ['snack', 'breakfast'],
+    tags: ['high-protein', 'clean-snack', 'metabolism', 'iron-rich'],
+    source: 'Indian Nutrient Tables',
+    sourceVersion: '2026.1'
+  },
+
+  // ==========================================
+  // --- NORTH INDIAN VEGETARIAN & VEGAN ---
+  // ==========================================
   {
     foodId: 'food_ni_01',
     name: 'Paneer Bhurji with Whole Wheat Roti',
@@ -353,7 +461,88 @@ export const foodsData = [
     sourceVersion: '2026.1'
   },
 
-  // --- Asian Cuisine ---
+  // ==========================================
+  // --- NORTH INDIAN NON-VEGETARIAN & EGG ---
+  // ==========================================
+  {
+    foodId: 'food_ni_nv_01',
+    name: 'Tandoori Spiced Grilled Chicken with Mint Raita & Whole Wheat Roti',
+    category: 'Main Course',
+    cuisine: 'North Indian',
+    servingSize: '180g grilled chicken breast + 2 rotis + 1/2 cup raita',
+    calories: 480,
+    protein: 44,
+    carbohydrates: 42,
+    fat: 14,
+    fiber: 7,
+    sodium: 540,
+    sugar: 4,
+    micronutrients: { iron: 4.2, calcium: 160, vitaminD: 0.4, vitaminB12: 1.4, potassium: 680, magnesium: 78 },
+    allergens: ['milk', 'wheat'],
+    ingredients: ['chicken breast', 'whole wheat flour', 'hung curd', 'ginger-garlic paste', 'kashmiri chili', 'garam masala', 'lemon juice'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: false,
+    containsDairy: true,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['high-protein', 'lean-meat', 'muscle-building', 'satiating'],
+    source: 'Indian Food Composition Tables',
+    sourceVersion: '2026.1'
+  },
+  {
+    foodId: 'food_ni_nv_02',
+    name: 'Homestyle Spiced Egg Curry with Brown Jeera Rice & Salad',
+    category: 'Main Course',
+    cuisine: 'North Indian',
+    servingSize: '2 boiled eggs in light onion-tomato gravy + 1 cup brown rice',
+    calories: 430,
+    protein: 20,
+    carbohydrates: 54,
+    fat: 15,
+    fiber: 7,
+    sodium: 490,
+    sugar: 4,
+    micronutrients: { iron: 4.1, calcium: 110, vitaminD: 2.4, vitaminB12: 1.8, potassium: 520, magnesium: 68 },
+    allergens: ['eggs'],
+    ingredients: ['whole eggs', 'brown rice', 'tomatoes', 'onions', 'ginger', 'garlic', 'turmeric', 'coriander'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: true,
+    containsDairy: false,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['high-protein', 'choline-rich', 'vitamin-b12', 'eggetarian-friendly'],
+    source: 'NIN Composition Tables',
+    sourceVersion: '2026.1'
+  },
+  {
+    foodId: 'food_ni_nv_03',
+    name: 'Murgh Methi (Chicken with Fresh Fenugreek) with Roti',
+    category: 'Main Course',
+    cuisine: 'North Indian',
+    servingSize: '1 bowl chicken methi curry (180g) + 2 phulkas',
+    calories: 460,
+    protein: 39,
+    carbohydrates: 44,
+    fat: 13,
+    fiber: 8,
+    sodium: 510,
+    sugar: 3,
+    micronutrients: { iron: 5.2, calcium: 140, vitaminD: 0.3, vitaminB12: 1.2, potassium: 710, magnesium: 85 },
+    allergens: ['wheat'],
+    ingredients: ['boneless chicken breast', 'fresh fenugreek leaves (methi)', 'whole wheat flour', 'tomatoes', 'ginger', 'cumin'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: false,
+    containsDairy: false,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['high-protein', 'blood-sugar-friendly', 'iron-rich', 'lean-meat'],
+    source: 'Standard Indian Tables',
+    sourceVersion: '2026.1'
+  },
+
+  // ==========================================
+  // --- ASIAN CUISINE (VEG & NON-VEG) ---
+  // ==========================================
   {
     foodId: 'food_as_01',
     name: 'Tofu & Vegetable Stir-Fry with Soba Noodles',
@@ -479,8 +668,35 @@ export const foodsData = [
     source: 'Asian Nutrition Database',
     sourceVersion: '2026.1'
   },
+  {
+    foodId: 'food_as_nv_01',
+    name: 'Steamed Chicken & Pak Choi Soup with Ginger Soba Noodles',
+    category: 'Main Course',
+    cuisine: 'Asian',
+    servingSize: '1 large bowl (380g)',
+    calories: 420,
+    protein: 34,
+    carbohydrates: 48,
+    fat: 9,
+    fiber: 6,
+    sodium: 560,
+    sugar: 3,
+    micronutrients: { iron: 3.8, calcium: 110, vitaminD: 0.3, vitaminB12: 1.1, potassium: 640, magnesium: 82 },
+    allergens: ['soy', 'sesame'],
+    ingredients: ['lean chicken breast slices', 'buckwheat soba', 'fresh pak choi', 'shiitake mushrooms', 'fresh ginger broth', 'sesame oil'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: false,
+    containsDairy: false,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['high-protein', 'comforting-broth', 'anti-inflammatory', 'easy-digest'],
+    source: 'Asian Nutrient Database',
+    sourceVersion: '2026.1'
+  },
 
-  // --- Western Cuisine ---
+  // ==========================================
+  // --- WESTERN CUISINE (VEG & NON-VEG) ---
+  // ==========================================
   {
     foodId: 'food_we_01',
     name: 'Steel-Cut Oatmeal with Chia Seeds & Fresh Berries',
@@ -527,7 +743,7 @@ export const foodsData = [
     containsEgg: true,
     containsDairy: false,
     mealTypes: ['breakfast', 'lunch'],
-    tags: ['high-protein', 'choline-rich', 'satiating'],
+    tags: ['high-protein', 'choline-rich', 'satiating', 'eggetarian-friendly'],
     source: 'USDA Food Data Central',
     sourceVersion: '2026.1'
   },
@@ -631,8 +847,35 @@ export const foodsData = [
     source: 'USDA Food Database',
     sourceVersion: '2026.1'
   },
+  {
+    foodId: 'food_we_nv_03',
+    name: 'Baked Lemon Herb Cod with Herbed Quinoa & Steamed Broccoli',
+    category: 'Main Course',
+    cuisine: 'Western',
+    servingSize: '1 cod fillet (160g) + 1/2 cup quinoa + broccoli',
+    calories: 420,
+    protein: 38,
+    carbohydrates: 38,
+    fat: 11,
+    fiber: 8,
+    sodium: 460,
+    sugar: 3,
+    micronutrients: { iron: 3.2, calcium: 95, vitaminD: 4.5, vitaminB12: 2.8, potassium: 740, magnesium: 110 },
+    allergens: ['fish'],
+    ingredients: ['atlantic cod fillet', 'tri-color quinoa', 'fresh broccoli', 'extra virgin olive oil', 'lemon', 'oregano', 'garlic'],
+    vegetarian: false,
+    vegan: false,
+    containsEgg: false,
+    containsDairy: false,
+    mealTypes: ['lunch', 'dinner'],
+    tags: ['lean-protein', 'omega-3', 'heart-healthy', 'low-calorie'],
+    source: 'USDA Food Database',
+    sourceVersion: '2026.1'
+  },
 
-  // --- Mediterranean & Special ---
+  // ==========================================
+  // --- MEDITERRANEAN & SPECIALTY (VEG & PLANT) ---
+  // ==========================================
   {
     foodId: 'food_me_01',
     name: 'Traditional Hummus Plate with Warm Whole Wheat Pita & Cucumbers',

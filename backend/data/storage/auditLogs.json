@@ -66,5 +66,73 @@
     "safetyFlags": [],
     "engineVersion": "1.2.0",
     "ruleVersion": "2026.1"
+  },
+  {
+    "_id": "id_1788698337243_v9sojyp",
+    "createdAt": "2026-09-06T12:38:57.243Z",
+    "updatedAt": "2026-09-06T12:38:57.243Z",
+    "userId": "test_user_e2e_01",
+    "profileInputs": {
+      "age": 29,
+      "sex": "female",
+      "dietaryPattern": "Vegetarian",
+      "allergies": [
+        "peanuts"
+      ],
+      "conditions": [
+        "anemia"
+      ],
+      "goals": [
+        "Balanced eating",
+        "Improve activity"
+      ]
+    },
+    "rulesTriggered": [
+      "cond_rule_anemia"
+    ],
+    "foodsBlocked": [],
+    "foodsSelected": [
+      "Sprouted Green Moong & Pomegranate Salad",
+      "Moong Dal Pongal with Steamed Greens",
+      "Sundal (Spiced Boiled Chickpeas & Coconut)",
+      "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita"
+    ],
+    "safetyFlags": [],
+    "engineVersion": "1.2.0",
+    "ruleVersion": "2026.1"
+  },
+  {
+    "_id": "id_1788698399416_12sonb3",
+    "createdAt": "2026-09-06T12:39:59.416Z",
+    "updatedAt": "2026-09-06T12:39:59.416Z",
+    "userId": "test_user_e2e_01",
+    "profileInputs": {
+      "age": 29,
+      "sex": "female",
+      "dietaryPattern": "Vegetarian",
+      "allergies": [
+        "peanuts"
+      ],
+      "conditions": [
+        "anemia"
+      ],
+      "goals": [
+        "Balanced eating",
+        "Improve activity"
+      ]
+    },
+    "rulesTriggered": [
+      "cond_rule_anemia"
+    ],
+    "foodsBlocked": [],
+    "foodsSelected": [
+      "Sprouted Green Moong & Pomegranate Salad",
+      "Moong Dal Pongal with Steamed Greens",
+      "Sundal (Spiced Boiled Chickpeas & Coconut)",
+      "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita"
+    ],
+    "safetyFlags": [],
+    "engineVersion": "1.2.0",
+    "ruleVersion": "2026.1"
   }
 ]

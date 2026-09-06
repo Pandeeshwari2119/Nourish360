@@ -1,6 +1,6 @@
-﻿// DietaryFilter.js
+// DietaryFilter.js
 export const checkDietaryPattern = (food, dietaryPattern = 'Vegetarian', otherRestrictions = []) => {
-  const pattern = (dietaryPattern || 'Vegetarian').toLowerCase();
+  const pattern = (dietaryPattern || 'Vegetarian').toLowerCase().trim();
   const restrictions = (otherRestrictions || []).map(r => r.toLowerCase().trim());
 
   // Strict pattern checks
@@ -13,8 +13,13 @@ export const checkDietaryPattern = (food, dietaryPattern = 'Vegetarian', otherRe
       return { passed: false, blockedReason: 'Does not meet Vegetarian requirements (contains egg, meat, or fish).' };
     }
   } else if (pattern === 'eggetarian') {
-    if (!food.vegetarian && !food.containsEgg) {
-      return { passed: false, blockedReason: 'Contains meat or poultry unsuitable for Eggetarian dietary pattern.' };
+    // Allows vegetarian dishes and egg dishes, blocks meat, poultry, and fish
+    const isMeatOrFish = (food.tags || []).some(t => ['lean-poultry', 'lean-fish', 'omega-3', 'lean-meat'].includes(t)) ||
+      (food.allergens || []).includes('fish') ||
+      (!food.vegetarian && !food.containsEgg);
+
+    if (isMeatOrFish) {
+      return { passed: false, blockedReason: 'Contains meat or fish unsuitable for Eggetarian dietary pattern.' };
     }
   }
 

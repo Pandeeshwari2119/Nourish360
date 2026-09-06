@@ -1,7 +1,7 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Sparkles, ArrowRight, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Sparkles, ArrowRight, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 export const SignupPage = () => {
   const { register } = useAuth();
@@ -11,6 +11,8 @@ export const SignupPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -35,7 +37,7 @@ export const SignupPage = () => {
     e.preventDefault();
     setError('');
 
-    if (password !== confirmPassword) {
+    if (password.trim() !== confirmPassword.trim()) {
       setError('Passwords do not match.');
       return;
     }
@@ -48,7 +50,10 @@ export const SignupPage = () => {
     setLoading(true);
 
     try {
-      const res = await register(name, email, password);
+      const cleanName = name.trim();
+      const cleanEmail = email.trim();
+      const cleanPassword = password.trim();
+      const res = await register(cleanName, cleanEmail, cleanPassword);
       if (res.success) {
         navigate('/onboarding');
       } else {
@@ -101,19 +106,33 @@ export const SignupPage = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
               placeholder="maya@example.com"
+              autoComplete="email"
             />
           </div>
 
           <div>
             <label className="block text-xs font-semibold text-stone-700 mb-1.5">Create Password</label>
-            <input
-              type="password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
-              placeholder="••••••••"
-            />
+            <div className="relative">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full pl-4 pr-11 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
+                placeholder="Create a strong password"
+                autoComplete="new-password"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-2.5 text-stone-400 hover:text-stone-600 p-0.5 rounded-lg transition"
+                tabIndex="-1"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+              >
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
+            </div>
+
             {password && (
               <div className="mt-1.5">
                 <div className="w-full h-1.5 rounded-full bg-stone-100 overflow-hidden">
@@ -129,14 +148,26 @@ export const SignupPage = () => {
 
           <div>
             <label className="block text-xs font-semibold text-stone-700 mb-1.5">Confirm Password</label>
-            <input
-              type="password"
-              required
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-4 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
-              placeholder="••••••••"
-            />
+            <div className="relative">
+              <input
+                type={showConfirmPassword ? 'text' : 'password'}
+                required
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                className="w-full pl-4 pr-11 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
+                placeholder="Re-enter your password"
+                autoComplete="new-password"
+              />
+              <button
+                type="button"
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                className="absolute right-3 top-2.5 text-stone-400 hover:text-stone-600 p-0.5 rounded-lg transition"
+                tabIndex="-1"
+                aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
+              >
+                {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
+            </div>
           </div>
 
           <label className="flex items-start gap-2.5 pt-1 text-stone-600 text-xs cursor-pointer">

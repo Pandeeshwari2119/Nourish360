@@ -1,4 +1,4 @@
-﻿// FoodRankingEngine.js
+// FoodRankingEngine.js
 import { checkAllergies } from './AllergyEngine.js';
 import { checkDietaryPattern } from './DietaryFilter.js';
 import { checkFoodConditionFit } from './ConditionRuleEngine.js';
@@ -34,10 +34,27 @@ export const scoreFoodCandidate = (food, context) => {
   let varietyScore = 10;
   let convenienceScore = 10;
 
+  // Dietary Pattern Priority Boost
+  const userDiet = (profile.dietaryPattern || 'Vegetarian').toLowerCase().trim();
+  if (userDiet === 'non-vegetarian') {
+    if (!food.vegetarian || food.containsEgg) {
+      // Prioritize nutritious lean meats, fish, and eggs for Non-vegetarians
+      preferenceFit += 30;
+    }
+  } else if (userDiet === 'eggetarian') {
+    if (food.containsEgg) {
+      preferenceFit += 25;
+    }
+  } else if (userDiet === 'vegan') {
+    if (food.vegan) {
+      preferenceFit += 20;
+    }
+  }
+
   // Cuisines fit
   const userCuisines = (profile.favoriteCuisines || []).map(c => c.toLowerCase());
   if (userCuisines.length > 0 && userCuisines.some(c => food.cuisine.toLowerCase().includes(c))) {
-    cuisineFit += 15;
+    cuisineFit += 20;
   }
 
   // Preferences: favorites add bonus, dislikes subtract
@@ -54,7 +71,7 @@ export const scoreFoodCandidate = (food, context) => {
 
   // Meal Type Alignment
   if (food.mealTypes && food.mealTypes.includes(targetMealType)) {
-    scheduleFit += 20;
+    scheduleFit += 25;
   } else {
     scheduleFit -= 15;
   }

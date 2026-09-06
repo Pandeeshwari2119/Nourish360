@@ -1,7 +1,7 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Sparkles, ArrowRight, AlertCircle } from 'lucide-react';
+import { Sparkles, ArrowRight, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 export const LoginPage = () => {
   const { login } = useAuth();
@@ -9,6 +9,7 @@ export const LoginPage = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -18,7 +19,9 @@ export const LoginPage = () => {
     setLoading(true);
 
     try {
-      const res = await login(email, password);
+      const cleanEmail = email.trim();
+      const cleanPassword = password.trim();
+      const res = await login(cleanEmail, cleanPassword);
       if (res.success) {
         if (res.hasProfile) {
           navigate('/dashboard');
@@ -26,10 +29,10 @@ export const LoginPage = () => {
           navigate('/onboarding');
         }
       } else {
-        setError(res.message || 'Invalid credentials');
+        setError(res.message || 'Invalid email or password. Please double check.');
       }
     } catch (err) {
-      setError('An error occurred during login.');
+      setError('An error occurred during login. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -63,6 +66,7 @@ export const LoginPage = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
               placeholder="you@example.com"
+              autoComplete="email"
             />
           </div>
 
@@ -73,14 +77,26 @@ export const LoginPage = () => {
                 Forgot password?
               </Link>
             </div>
-            <input
-              type="password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
-              placeholder="••••••••"
-            />
+            <div className="relative">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full pl-4 pr-11 py-2.5 text-xs rounded-xl border border-stone-200 focus:outline-none focus:border-forest-500"
+                placeholder="Enter your password"
+                autoComplete="current-password"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-2.5 text-stone-400 hover:text-stone-600 p-0.5 rounded-lg transition"
+                tabIndex="-1"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+              >
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
+            </div>
           </div>
 
           <button
@@ -94,7 +110,7 @@ export const LoginPage = () => {
         </form>
 
         <div className="mt-6 pt-4 border-t border-stone-100 text-center text-xs text-stone-500">
-          <span>Do not have an account? </span>
+          <span>Don't have an account? </span>
           <Link to="/signup" className="text-forest-700 font-semibold hover:underline">
             Create one free
           </Link>
