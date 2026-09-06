@@ -36,17 +36,21 @@ export const scoreFoodCandidate = (food, context) => {
 
   // Dietary Pattern Priority Boost
   const userDiet = (profile.dietaryPattern || 'Vegetarian').toLowerCase().trim();
-  if (userDiet === 'non-vegetarian') {
+  if (userDiet === 'non-vegetarian' || userDiet === 'non_vegetarian' || userDiet === 'non-veg') {
     if (!food.vegetarian || food.containsEgg) {
-      // Prioritize nutritious lean meats, fish, and eggs for Non-vegetarians
-      preferenceFit += 30;
+      // Heavily prioritize nutritious lean meats, seafood, fish, and eggs for Non-vegetarians
+      preferenceFit += 35;
     }
   } else if (userDiet === 'eggetarian') {
     if (food.containsEgg) {
-      preferenceFit += 25;
+      preferenceFit += 30;
     }
   } else if (userDiet === 'vegan') {
     if (food.vegan) {
+      preferenceFit += 25;
+    }
+  } else if (userDiet === 'vegetarian') {
+    if (food.vegetarian && !food.containsEgg) {
       preferenceFit += 20;
     }
   }

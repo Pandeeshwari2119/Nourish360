@@ -48,25 +48,32 @@ export const Timeline = ({ items = [] }) => {
 
         return (
           <div key={item.id || index} className="relative group">
-            {/* Timeline Node Point (Clickable) */}
+            {/* Timeline Node Point (Touch/Click Target) */}
             <button
+              type="button"
               onClick={() => toggleTimelineItem(item.id)}
-              className={`absolute -left-6 md:-left-8 top-3.5 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white shadow-sm flex items-center justify-center ${style} transition transform group-hover:scale-110 cursor-pointer`}
-              title="Click to toggle complete"
+              className={`absolute -left-6 md:-left-8 top-3.5 w-7 h-7 md:w-8 md:h-8 rounded-full border-2 border-white shadow-sm flex items-center justify-center ${
+                item.completed ? 'bg-emerald-600 text-white' : style
+              } transition-all transform active:scale-95 hover:scale-105 cursor-pointer touch-manipulation`}
+              title={item.completed ? 'Completed' : 'Click to complete'}
+              aria-label="Toggle task"
             >
               {item.completed ? (
-                <CheckCircle2 className="w-4 h-4 text-emerald-700" />
+                <CheckCircle2 className="w-4 h-4 text-white" />
               ) : (
-                <Icon className="w-3 h-3 md:w-3.5 md:h-3.5" />
+                <Icon className="w-3.5 h-3.5" />
               )}
             </button>
 
-            {/* Timeline Card */}
-            <div className={`p-4 md:p-5 rounded-3xl border transition-all ${
-              item.completed 
-                ? 'bg-stone-50/80 border-stone-200/60 opacity-60' 
-                : 'bg-white/95 border-stone-200/80 shadow-soft hover:shadow-soft-lg hover:border-forest-500/40'
-            }`}>
+            {/* Timeline Card (Entire Card Clickable to Complete) */}
+            <div 
+              onClick={() => toggleTimelineItem(item.id)}
+              className={`p-4 md:p-5 rounded-3xl border transition-all cursor-pointer select-none touch-manipulation active:scale-[0.99] ${
+                item.completed 
+                  ? 'bg-stone-50/90 border-stone-200/60 shadow-sm opacity-75' 
+                  : 'bg-white/95 border-stone-200/80 shadow-soft hover:shadow-soft-lg hover:border-forest-500/40'
+              }`}
+            >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-[11px] font-bold text-forest-700 bg-sage-50 px-2.5 py-0.5 rounded-lg border border-sage-200/60">
@@ -77,9 +84,10 @@ export const Timeline = ({ items = [] }) => {
                   </span>
                 </div>
 
-                <div className="flex items-center gap-1.5 self-end sm:self-auto">
+                <div className="flex items-center gap-1.5 self-end sm:self-auto" onClick={(e) => e.stopPropagation()}>
                   {item.explanation && (
                     <button
+                      type="button"
                       onClick={() => setSelectedWhy(item.explanation)}
                       className="text-[11px] text-stone-500 hover:text-forest-700 font-medium px-2 py-1 rounded-lg hover:bg-stone-100 transition flex items-center gap-1 cursor-pointer"
                       title="Why was this recommended?"
@@ -91,6 +99,7 @@ export const Timeline = ({ items = [] }) => {
 
                   {item.type === 'meal' && item.foodDetails && (
                     <button
+                      type="button"
                       onClick={() => setSelectedSwap({
                         slotId: item.id,
                         label: item.label,
@@ -109,16 +118,13 @@ export const Timeline = ({ items = [] }) => {
                   {/* Large Checkbox Touch Button */}
                   <button
                     type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleTimelineItem(item.id);
-                    }}
+                    onClick={() => toggleTimelineItem(item.id)}
                     className="p-1.5 rounded-xl hover:bg-stone-100 text-stone-400 hover:text-forest-600 transition cursor-pointer flex items-center justify-center"
                     title={item.completed ? 'Mark as incomplete' : 'Mark as complete'}
                     aria-label="Toggle task completion"
                   >
                     {item.completed ? (
-                      <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 fill-emerald-50" />
                     ) : (
                       <Circle className="w-5 h-5 text-stone-400 hover:text-stone-600" />
                     )}
@@ -126,11 +132,10 @@ export const Timeline = ({ items = [] }) => {
                 </div>
               </div>
 
-              <div 
-                onClick={() => toggleTimelineItem(item.id)}
-                className="cursor-pointer select-none"
-              >
-                <h4 className={`text-sm md:text-base font-semibold ${item.completed ? 'line-through text-stone-400' : 'text-stone-800'}`}>
+              <div>
+                <h4 className={`text-sm md:text-base font-semibold transition-colors ${
+                  item.completed ? 'line-through text-stone-400' : 'text-stone-800'
+                }`}>
                   {item.title}
                 </h4>
                 <p className="text-xs text-stone-500 mt-1 leading-relaxed">

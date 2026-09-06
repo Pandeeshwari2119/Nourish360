@@ -1,4 +1,4 @@
-﻿// recommendationController.js
+// recommendationController.js
 import { Recommendation, Feedback, HealthProfile } from '../models/schemas.js';
 import { generatePersonalizedPlan, generateWeeklyPlan } from '../services/recommendation/index.js';
 
@@ -21,7 +21,9 @@ export const generate = async (req, res, next) => {
 
 export const getToday = async (req, res, next) => {
   try {
-    let rec = await Recommendation.findOne({ userId: req.user._id });
+    const shouldRefresh = req.query.refresh === 'true';
+    let rec = shouldRefresh ? null : await Recommendation.findOne({ userId: req.user._id });
+    
     if (!rec) {
       const profile = await HealthProfile.findOne({ userId: req.user._id });
       if (profile) {

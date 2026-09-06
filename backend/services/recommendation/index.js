@@ -1,4 +1,4 @@
-﻿// index.js - Master RecommendationEngine Orchestrator
+// index.js - Master RecommendationEngine Orchestrator
 import { normalizeProfile } from './ProfileNormalizer.js';
 import { evaluateSafety } from './SafetyEngine.js';
 import { evaluateConditionRules } from './ConditionRuleEngine.js';
@@ -13,7 +13,7 @@ import { generateExplanation } from './ExplanationEngine.js';
 import { getUserFeedbackMap } from './FeedbackEngine.js';
 import { Recommendation, AuditLog } from '../../models/schemas.js';
 
-export const generatePersonalizedPlan = async (userProfile, userId) => {
+export const generatePersonalizedPlan = async (userProfile, userId, dayIndex = 0, usedFoodIdsThisWeek = new Set()) => {
   // 1. Validation & Normalization
   const normalized = normalizeProfile(userProfile);
 
@@ -37,8 +37,8 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
   // 6. User Feedback History
   const feedbackMap = userId ? await getUserFeedbackMap(userId) : {};
 
-  // 7. Meal Generator
-  const meals = await generateMealPlan(normalized, conditionContext, feedbackMap);
+  // 7. Meal Generator (with day-by-day rotation)
+  const meals = await generateMealPlan(normalized, conditionContext, feedbackMap, dayIndex, usedFoodIdsThisWeek);
 
   // 8. Activity Engine
   const activityPlan = await generateActivityPlan(normalized);
@@ -61,7 +61,8 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
       title: 'Gentle Awakening & Hydration',
       description: 'Wake up naturally, open blinds to let morning daylight in, and drink 1-2 glasses of water.',
       reason: 'Anchors circadian rhythm and jumpstarts metabolism.',
-      confidence: 'HIGH'
+      confidence: 'HIGH',
+      completed: false
     }
   ];
 
@@ -88,7 +89,8 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
     title: 'Movement & Posture Break',
     description: activityPlan.movementBreaks[0]?.action || '5-minute stretch and spine release.',
     reason: 'Offsets sitting duration and reduces spinal tension.',
-    confidence: 'HIGH'
+    confidence: 'HIGH',
+    completed: false
   });
 
   // Add Workout or Post-dinner stroll
@@ -100,7 +102,8 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
     description: `${activityPlan.activeMinutesGoal} mins • ${activityPlan.recommendedWorkout?.difficulty || 'Beginner'} difficulty`,
     details: activityPlan.recommendedWorkout,
     reason: 'Gradually advances your daily step count towards a sustainable baseline.',
-    confidence: 'HIGH'
+    confidence: 'HIGH',
+    completed: false
   });
 
   // Wind down & Sleep
@@ -111,7 +114,8 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
     title: 'Screen Curfew & Evening Wind-Down',
     description: 'Begin dimming lights, turn off digital screens, and practice calm breathing.',
     reason: 'Promotes natural melatonin secretion for deep restorative sleep.',
-    confidence: 'HIGH'
+    confidence: 'HIGH',
+    completed: false
   });
 
   dailyTimeline.push({
@@ -121,7 +125,8 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
     title: 'Sleep Target',
     description: `Targeting ~${sleepPlan.estimatedDurationHours} hours of uninterrupted restorative sleep.`,
     reason: 'Crucial for cognitive, hormonal, and muscular recovery.',
-    confidence: 'HIGH'
+    confidence: 'HIGH',
+    completed: false
   });
 
   // Sort timeline chronologically
@@ -173,21 +178,26 @@ export const generatePersonalizedPlan = async (userProfile, userId) => {
     auditTrail: auditData
   };
 
-  // Save to Recommendation store if user exists
+  // Upsert to Recommendation store if user exists (always replace outdated plan)
   if (userId) {
-    await Recommendation.create(result);
+    await Recommendation.findOneAndUpdate(
+      { userId },
+      result,
+      { upsert: true, new: true }
+    );
   }
 
   return result;
 };
 
-// Weekly Plan Generator
+// 7-Day Distinct Weekly Plan Generator (Monday to Sunday)
 export const generateWeeklyPlan = async (userProfile, userId) => {
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   const weekPlan = [];
+  const usedFoodIdsThisWeek = new Set();
 
   for (let i = 0; i < days.length; i++) {
-    const singleDay = await generatePersonalizedPlan(userProfile, null);
+    const singleDay = await generatePersonalizedPlan(userProfile, null, i, usedFoodIdsThisWeek);
     weekPlan.push({
       dayName: days[i],
       dayIndex: i,

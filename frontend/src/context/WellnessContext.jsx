@@ -6,24 +6,45 @@ import { useAuth } from './AuthContext';
 const WellnessContext = createContext(null);
 
 export const WellnessProvider = ({ children }) => {
-  const { token, hasProfile } = useAuth();
+  const { user, token, hasProfile } = useAuth();
   const [plan, setPlan] = useState(null);
   const [progress, setProgress] = useState(null);
   const [habits, setHabits] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const fetchWellnessData = async () => {
+  // Load saved completed items for today from local storage
+  const getTodayStorageKey = () => {
+    const todayStr = new Date().toISOString().slice(0, 10);
+    return `nourish360_completed_tasks_${user?._id || user?.id || 'guest'}_${todayStr}`;
+  };
+
+  const fetchWellnessData = async (forceRefresh = false) => {
     if (!token || !hasProfile) return;
     setLoading(true);
     try {
       const [planRes, progRes, habRes] = await Promise.all([
-        api.getTodayPlan(),
+        forceRefresh ? api.generatePlan() : api.getTodayPlan(),
         api.getProgress(),
         api.getHabits()
       ]);
 
       if (planRes.success && planRes.plan) {
-        setPlan(planRes.plan);
+        let currentPlan = planRes.plan;
+        
+        // Merge with local storage completed tasks
+        try {
+          const savedCompleted = JSON.parse(localStorage.getItem(getTodayStorageKey()) || '[]');
+          if (Array.isArray(savedCompleted) && currentPlan.dailyTimeline) {
+            currentPlan.dailyTimeline = currentPlan.dailyTimeline.map(item => ({
+              ...item,
+              completed: savedCompleted.includes(item.id) || item.completed
+            }));
+          }
+        } catch (e) {
+          console.error(e);
+        }
+
+        setPlan(currentPlan);
       }
       if (progRes.success) {
         setProgress(progRes);
@@ -46,7 +67,6 @@ export const WellnessProvider = ({ children }) => {
     try {
       const res = await api.swapMeal(slotId, newFoodId);
       if (res.success) {
-        // Refresh plan
         const updated = await api.getTodayPlan();
         if (updated.success) setPlan(updated.plan);
         return { success: true, message: res.message };
@@ -66,6 +86,15 @@ export const WellnessProvider = ({ children }) => {
         }
         return item;
       });
+
+      // Persist completed task IDs to localStorage
+      try {
+        const completedIds = updated.filter(item => item.completed).map(item => item.id);
+        localStorage.setItem(getTodayStorageKey(), JSON.stringify(completedIds));
+      } catch (e) {
+        console.error(e);
+      }
+
       return { ...prev, dailyTimeline: updated };
     });
   };
@@ -79,7 +108,6 @@ export const WellnessProvider = ({ children }) => {
     try {
       const res = await api.toggleHabit(habitId);
       if (res.success) {
-        // Refresh progress
         const prog = await api.getProgress();
         if (prog.success) setProgress(prog);
         return true;
@@ -119,7 +147,7 @@ export const WellnessProvider = ({ children }) => {
       progress,
       habits,
       loading,
-      refreshPlan: fetchWellnessData,
+      refreshPlan: () => fetchWellnessData(true),
       swapMeal,
       toggleTimelineItem,
       toggleHabit,

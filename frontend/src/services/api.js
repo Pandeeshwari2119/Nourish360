@@ -87,8 +87,17 @@ export const api = {
   },
 
   // Recommendations & Plan
-  async getTodayPlan() {
-    const res = await fetch(`${API_BASE}/recommendations/today`, { headers: getHeaders() });
+  async getTodayPlan(forceRefresh = false) {
+    const q = forceRefresh ? '?refresh=true' : '';
+    const res = await fetch(`${API_BASE}/recommendations/today${q}`, { headers: getHeaders() });
+    return res.json();
+  },
+
+  async generatePlan() {
+    const res = await fetch(`${API_BASE}/recommendations/generate`, {
+      method: 'POST',
+      headers: getHeaders()
+    });
     return res.json();
   },
 

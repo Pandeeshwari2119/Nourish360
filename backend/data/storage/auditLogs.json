@@ -134,5 +134,39 @@
     "safetyFlags": [],
     "engineVersion": "1.2.0",
     "ruleVersion": "2026.1"
+  },
+  {
+    "_id": "id_1788700048603_qu7okqq",
+    "createdAt": "2026-09-06T13:07:28.603Z",
+    "updatedAt": "2026-09-06T13:07:28.603Z",
+    "userId": "test_user_e2e_01",
+    "profileInputs": {
+      "age": 29,
+      "sex": "female",
+      "dietaryPattern": "Vegetarian",
+      "allergies": [
+        "peanuts"
+      ],
+      "conditions": [
+        "anemia"
+      ],
+      "goals": [
+        "Balanced eating",
+        "Improve activity"
+      ]
+    },
+    "rulesTriggered": [
+      "cond_rule_anemia"
+    ],
+    "foodsBlocked": [],
+    "foodsSelected": [
+      "Sprouted Green Moong & Pomegranate Salad",
+      "Moong Dal Pongal with Steamed Greens",
+      "Sprouted Green Moong & Pomegranate Salad",
+      "Foxtail Millet Khichdi with Mixed Vegetables"
+    ],
+    "safetyFlags": [],
+    "engineVersion": "1.2.0",
+    "ruleVersion": "2026.1"
   }
 ]

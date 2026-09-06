@@ -1,8 +1,8 @@
-﻿// MealGenerator.js
+// MealGenerator.js
 import { Food } from '../../models/schemas.js';
 import { scoreFoodCandidate } from './FoodRankingEngine.js';
 
-export const generateMealPlan = async (profile, conditionContext, userFeedbackMap = {}) => {
+export const generateMealPlan = async (profile, conditionContext, userFeedbackMap = {}, dayIndex = 0, usedFoodIdsThisWeek = new Set()) => {
   const allFoods = await Food.find({});
 
   const mealSlots = [
@@ -18,13 +18,13 @@ export const generateMealPlan = async (profile, conditionContext, userFeedbackMa
   }
 
   const selectedMeals = [];
-  const chosenFoodIds = new Set();
+  const chosenFoodIdsToday = new Set();
 
   for (const slot of mealSlots) {
     const scoredCandidates = [];
 
     for (const food of allFoods) {
-      if (chosenFoodIds.has(food.foodId)) continue; // avoid exact duplicate in same day
+      if (chosenFoodIdsToday.has(food.foodId)) continue; // avoid duplicate in same day
 
       const result = scoreFoodCandidate(food, {
         profile,
@@ -34,9 +34,15 @@ export const generateMealPlan = async (profile, conditionContext, userFeedbackMa
       });
 
       if (result.eligible) {
+        let finalScore = result.candidateScore;
+        // If this food was already used earlier in the week, give fresh unused foods priority
+        if (usedFoodIdsThisWeek.has(food.foodId)) {
+          finalScore -= 30;
+        }
+
         scoredCandidates.push({
           food,
-          score: result.candidateScore,
+          score: finalScore,
           scoreBreakdown: result.scoreBreakdown
         });
       }
@@ -45,11 +51,17 @@ export const generateMealPlan = async (profile, conditionContext, userFeedbackMa
     scoredCandidates.sort((a, b) => b.score - a.score);
 
     if (scoredCandidates.length > 0) {
-      const best = scoredCandidates[0];
-      chosenFoodIds.add(best.food.foodId);
+      // Pick the best candidate or rotate through top candidates if scores are close
+      const candidateIndex = scoredCandidates.length > 1 && dayIndex > 0
+        ? (dayIndex % Math.min(scoredCandidates.length, 3))
+        : 0;
+      
+      const best = scoredCandidates[candidateIndex] || scoredCandidates[0];
+      chosenFoodIdsToday.add(best.food.foodId);
+      usedFoodIdsThisWeek.add(best.food.foodId);
 
       selectedMeals.push({
-        slotId: `slot_${slot.type}_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+        slotId: `slot_${slot.type}_d${dayIndex}_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
         mealType: slot.type,
         label: slot.label,
         suggestedTime: slot.time,
@@ -65,7 +77,7 @@ export const generateMealPlan = async (profile, conditionContext, userFeedbackMa
         allergens: best.food.allergens,
         ingredients: best.food.ingredients,
         tags: best.food.tags,
-        confidence: best.score > 60 ? 'HIGH' : 'MEDIUM',
+        confidence: best.score > 50 ? 'HIGH' : 'MEDIUM',
         scoreBreakdown: best.scoreBreakdown,
         completed: false
       });

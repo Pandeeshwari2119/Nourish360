@@ -51,12 +51,12 @@
     "source": "NIN / Indian Food Composition Tables",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.641Z",
-    "updatedAt": "2026-09-06T12:39:59.293Z"
+    "updatedAt": "2026-09-06T13:07:28.509Z"
   },
   {
     "_id": "id_1788365426645_mblcqv7",
     "foodId": "food_si_02",
-    "name": "Vegetable Dosa with Mint Chutney",
+    "name": "Crisp Vegetable Dosa with Mint Chutney",
     "category": "Breakfast",
     "cuisine": "South Indian",
     "servingSize": "1 large crisp dosa with vegetable filling",
@@ -102,7 +102,7 @@
     "source": "Standard Nutrition Database",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.645Z",
-    "updatedAt": "2026-09-06T12:39:59.298Z"
+    "updatedAt": "2026-09-06T13:07:28.511Z"
   },
   {
     "_id": "id_1788365426646_ijqbfr7",
@@ -155,7 +155,7 @@
     "source": "NIN Composition Tables",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.646Z",
-    "updatedAt": "2026-09-06T12:39:59.299Z"
+    "updatedAt": "2026-09-06T13:07:28.512Z"
   },
   {
     "_id": "id_1788365426647_164vena",
@@ -199,45 +199,204 @@
       "lunch"
     ],
     "tags": [
+      "balanced-plate",
       "probiotic",
-      "high-fiber",
-      "balanced"
+      "fiber-dense"
     ],
-    "source": "NIN Tables",
+    "source": "NIN Composition Tables",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.647Z",
-    "updatedAt": "2026-09-06T12:39:59.300Z"
+    "updatedAt": "2026-09-06T13:07:28.514Z"
   },
   {
     "_id": "id_1788365426648_34lz4n4",
     "foodId": "food_si_05",
-    "name": "Ragi Mudde / Millet Ball with Lentil Saaru",
+    "name": "Foxtail Millet Khichdi with Mixed Vegetables",
     "category": "Main Course",
     "cuisine": "South Indian",
-    "servingSize": "1 ragi ball (180g) + 1 bowl saaru",
-    "calories": 410,
+    "servingSize": "1 large bowl (250g)",
+    "calories": 380,
     "protein": 13,
-    "carbohydrates": 76,
-    "fat": 6,
-    "fiber": 14,
-    "sodium": 490,
-    "sugar": 2,
+    "carbohydrates": 62,
+    "fat": 8,
+    "fiber": 10,
+    "sodium": 430,
+    "sugar": 3,
     "micronutrients": {
-      "iron": 5.4,
-      "calcium": 340,
+      "iron": 4.5,
+      "calcium": 70,
       "vitaminD": 0,
       "vitaminB12": 0,
-      "potassium": 490,
-      "magnesium": 115
+      "potassium": 450,
+      "magnesium": 88
     },
     "allergens": [],
     "ingredients": [
-      "finger millet (ragi) flour",
+      "foxtail millet",
+      "moong dal",
+      "carrots",
+      "beans",
+      "peas",
+      "cumin",
+      "ginger",
+      "ghee"
+    ],
+    "vegetarian": true,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": true,
+    "mealTypes": [
+      "dinner",
+      "lunch"
+    ],
+    "tags": [
+      "millet",
+      "low-glycemic",
+      "high-fiber"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-02T16:10:26.648Z",
+    "updatedAt": "2026-09-06T13:07:28.516Z"
+  },
+  {
+    "_id": "id_1788365426649_gx3mtiq",
+    "foodId": "food_si_06",
+    "name": "Spiced Boiled Chickpea (Chana) Sundal",
+    "category": "Snack",
+    "cuisine": "South Indian",
+    "servingSize": "1 cup (150g)",
+    "calories": 220,
+    "protein": 11,
+    "carbohydrates": 34,
+    "fat": 4,
+    "fiber": 9,
+    "sodium": 320,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.8,
+      "calcium": 65,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "potassium": 380,
+      "magnesium": 62
+    },
+    "allergens": [
+      "coconut"
+    ],
+    "ingredients": [
+      "white or brown chickpeas",
+      "coconut",
+      "mustard seeds",
+      "curry leaves",
+      "green chilies",
+      "hing"
+    ],
+    "vegetarian": true,
+    "vegan": true,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "snack",
+      "breakfast"
+    ],
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "clean-snack",
+      "plant-protein"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-02T16:10:26.649Z",
+    "updatedAt": "2026-09-06T13:07:28.518Z"
+  },
+  {
+    "_id": "id_1788365426650_droykx6",
+    "foodId": "food_ni_01",
+    "name": "Palak Dal with Steamed Brown Rice & Cucumber Raita",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "1 bowl dal + 1 cup rice + 1/2 cup raita",
+    "calories": 460,
+    "protein": 18,
+    "carbohydrates": 72,
+    "fat": 9,
+    "fiber": 12,
+    "sodium": 510,
+    "sugar": 4,
+    "micronutrients": {
+      "iron": 5.1,
+      "calcium": 160,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.4,
+      "potassium": 590,
+      "magnesium": 105
+    },
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
       "toor dal",
-      "tomatoes",
-      "tamarind",
+      "spinach (palak)",
+      "brown rice",
+      "curd",
+      "cucumber",
+      "cumin",
       "garlic",
-      "coriander"
+      "tomatoes"
+    ],
+    "vegetarian": true,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": true,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "iron-rich",
+      "high-fiber",
+      "gut-friendly"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-02T16:10:26.650Z",
+    "updatedAt": "2026-09-06T13:07:28.521Z"
+  },
+  {
+    "_id": "id_1788365426651_17mz783",
+    "foodId": "food_ni_02",
+    "name": "Chana Masala with Whole Wheat Roti",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "1 bowl chana masala + 2 whole wheat rotis",
+    "calories": 440,
+    "protein": 17,
+    "carbohydrates": 68,
+    "fat": 10,
+    "fiber": 14,
+    "sodium": 540,
+    "sugar": 4,
+    "micronutrients": {
+      "iron": 5.4,
+      "calcium": 110,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "potassium": 560,
+      "magnesium": 95
+    },
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "chickpeas (kabuli chana)",
+      "whole wheat flour",
+      "tomatoes",
+      "onions",
+      "ginger",
+      "garlic",
+      "garam masala"
     ],
     "vegetarian": true,
     "vegan": true,
@@ -248,99 +407,153 @@
       "dinner"
     ],
     "tags": [
-      "calcium-rich",
-      "iron-rich",
       "high-fiber",
-      "diabetic-friendly"
+      "high-protein",
+      "plant-powered",
+      "vegan"
     ],
-    "source": "NIN / Millets Database",
+    "source": "NIN Composition Tables",
     "sourceVersion": "2026.1",
-    "createdAt": "2026-09-02T16:10:26.648Z",
-    "updatedAt": "2026-09-06T12:39:59.301Z"
+    "createdAt": "2026-09-02T16:10:26.651Z",
+    "updatedAt": "2026-09-06T13:07:28.522Z"
   },
   {
-    "_id": "id_1788365426649_gx3mtiq",
-    "foodId": "food_si_06",
-    "name": "Sundal (Spiced Boiled Chickpeas & Coconut)",
-    "category": "Snack",
-    "cuisine": "South Indian",
-    "servingSize": "1 bowl (120g)",
-    "calories": 195,
-    "protein": 9,
-    "carbohydrates": 28,
-    "fat": 5,
-    "fiber": 7,
-    "sodium": 260,
-    "sugar": 3,
+    "_id": "id_1788365426652_tz4x5gv",
+    "foodId": "food_ni_03",
+    "name": "Grilled Paneer & Bell Pepper Tikka with Mint Chutney",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "150g grilled paneer cubes with bell peppers and onions",
+    "calories": 370,
+    "protein": 23,
+    "carbohydrates": 14,
+    "fat": 22,
+    "fiber": 4,
+    "sodium": 480,
+    "sugar": 4,
     "micronutrients": {
-      "iron": 2.9,
-      "calcium": 55,
-      "vitaminD": 0,
-      "vitaminB12": 0,
-      "potassium": 320,
-      "magnesium": 52
+      "iron": 1.8,
+      "calcium": 340,
+      "vitaminD": 0.3,
+      "vitaminB12": 0.8,
+      "potassium": 380,
+      "magnesium": 45
     },
     "allergens": [
-      "coconut"
+      "milk"
     ],
     "ingredients": [
-      "white chickpeas",
-      "grated coconut",
-      "green chillies",
-      "mustard seeds",
-      "curry leaves",
-      "hing"
+      "paneer (cottage cheese)",
+      "bell peppers",
+      "onions",
+      "curd/yogurt",
+      "mint",
+      "chaat masala",
+      "lemon juice"
+    ],
+    "vegetarian": true,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": true,
+    "mealTypes": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "tags": [
+      "calcium-rich",
+      "high-protein",
+      "low-carb"
+    ],
+    "source": "Standard Nutrition Database",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-02T16:10:26.652Z",
+    "updatedAt": "2026-09-06T13:07:28.524Z"
+  },
+  {
+    "_id": "id_1788365426654_pfq9twe",
+    "foodId": "food_ni_04",
+    "name": "Sprouted Green Moong & Pomegranate Salad",
+    "category": "Breakfast",
+    "cuisine": "North Indian",
+    "servingSize": "1 large bowl (160g)",
+    "calories": 180,
+    "protein": 11,
+    "carbohydrates": 32,
+    "fat": 2,
+    "fiber": 8,
+    "sodium": 140,
+    "sugar": 8,
+    "micronutrients": {
+      "iron": 3.2,
+      "calcium": 45,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "potassium": 420,
+      "magnesium": 65
+    },
+    "allergens": [],
+    "ingredients": [
+      "sprouted green gram",
+      "pomegranate seeds",
+      "cucumber",
+      "lemon juice",
+      "chaat masala",
+      "coriander"
     ],
     "vegetarian": true,
     "vegan": true,
     "containsEgg": false,
     "containsDairy": false,
     "mealTypes": [
+      "breakfast",
       "snack"
     ],
     "tags": [
-      "high-protein",
-      "clean-snack",
-      "fiber"
+      "raw",
+      "enzymes",
+      "superfood",
+      "high-fiber",
+      "vegan"
     ],
-    "source": "Standard Indian Nutrient Database",
+    "source": "Standard Nutrition Database",
     "sourceVersion": "2026.1",
-    "createdAt": "2026-09-02T16:10:26.649Z",
-    "updatedAt": "2026-09-06T12:39:59.302Z"
+    "createdAt": "2026-09-02T16:10:26.654Z",
+    "updatedAt": "2026-09-06T13:07:28.527Z"
   },
   {
-    "_id": "id_1788365426650_droykx6",
-    "foodId": "food_ni_01",
-    "name": "Paneer Bhurji with Whole Wheat Roti",
-    "category": "Main Course",
+    "_id": "id_1788365426655_9m34iij",
+    "foodId": "food_ni_05",
+    "name": "Methi Thepla with Low-Fat Curd & Roasted Flaxseed",
+    "category": "Breakfast",
     "cuisine": "North Indian",
-    "servingSize": "150g bhurji + 2 whole wheat rotis",
-    "calories": 450,
-    "protein": 22,
-    "carbohydrates": 42,
-    "fat": 22,
-    "fiber": 7,
-    "sodium": 510,
-    "sugar": 4,
+    "servingSize": "2 theplas (120g) + 1/2 cup curd",
+    "calories": 320,
+    "protein": 12,
+    "carbohydrates": 44,
+    "fat": 10,
+    "fiber": 6,
+    "sodium": 380,
+    "sugar": 3,
     "micronutrients": {
-      "iron": 3.2,
-      "calcium": 310,
-      "vitaminD": 0.6,
-      "vitaminB12": 0.8,
-      "potassium": 380,
+      "iron": 3.8,
+      "calcium": 180,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.4,
+      "potassium": 340,
       "magnesium": 65
     },
     "allergens": [
-      "milk",
-      "wheat"
+      "wheat",
+      "milk"
     ],
     "ingredients": [
-      "cottage cheese (paneer)",
       "whole wheat flour",
-      "tomatoes",
-      "onions",
-      "bell peppers",
-      "cumin",
+      "besan (gram flour)",
+      "fresh fenugreek leaves",
+      "curd",
+      "flaxseeds",
+      "ajwain",
       "turmeric"
     ],
     "vegetarian": true,
@@ -349,238 +562,35 @@
     "containsDairy": true,
     "mealTypes": [
       "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "tags": [
-      "high-protein",
-      "calcium-rich",
-      "satiating"
-    ],
-    "source": "USDA / Indian Foods",
-    "sourceVersion": "2026.1",
-    "createdAt": "2026-09-02T16:10:26.650Z",
-    "updatedAt": "2026-09-06T12:39:59.311Z"
-  },
-  {
-    "_id": "id_1788365426651_17mz783",
-    "foodId": "food_ni_02",
-    "name": "Palak Dal (Lentil & Spinach) with Brown Rice & Cucumber Raita",
-    "category": "Main Course",
-    "cuisine": "North Indian",
-    "servingSize": "1 bowl dal + 1 cup brown rice + 1/2 cup raita",
-    "calories": 490,
-    "protein": 19,
-    "carbohydrates": 77,
-    "fat": 11,
-    "fiber": 12,
-    "sodium": 540,
-    "sugar": 5,
-    "micronutrients": {
-      "iron": 5.8,
-      "calcium": 240,
-      "vitaminD": 0.3,
-      "vitaminB12": 0.4,
-      "potassium": 680,
-      "magnesium": 110
-    },
-    "allergens": [
-      "milk"
-    ],
-    "ingredients": [
-      "yellow toor dal",
-      "fresh spinach",
-      "brown rice",
-      "plain low-fat curd",
-      "cucumber",
-      "cumin",
-      "garlic"
-    ],
-    "vegetarian": true,
-    "vegan": false,
-    "containsEgg": false,
-    "containsDairy": true,
-    "mealTypes": [
-      "lunch",
-      "dinner"
-    ],
-    "tags": [
-      "iron-rich",
-      "gut-friendly",
-      "high-fiber",
-      "anemia-friendly"
-    ],
-    "source": "Indian Food Database",
-    "sourceVersion": "2026.1",
-    "createdAt": "2026-09-02T16:10:26.651Z",
-    "updatedAt": "2026-09-06T12:39:59.312Z"
-  },
-  {
-    "_id": "id_1788365426652_tz4x5gv",
-    "foodId": "food_ni_03",
-    "name": "Spiced Rajma (Kidney Beans) with Steamed Jeera Rice",
-    "category": "Main Course",
-    "cuisine": "North Indian",
-    "servingSize": "1 bowl rajma (200g) + 1 cup rice",
-    "calories": 460,
-    "protein": 18,
-    "carbohydrates": 79,
-    "fat": 8,
-    "fiber": 13,
-    "sodium": 520,
-    "sugar": 4,
-    "micronutrients": {
-      "iron": 4.9,
-      "calcium": 110,
-      "vitaminD": 0,
-      "vitaminB12": 0,
-      "potassium": 720,
-      "magnesium": 88
-    },
-    "allergens": [],
-    "ingredients": [
-      "red kidney beans",
-      "basmati rice",
-      "onions",
-      "tomatoes",
-      "ginger",
-      "cumin seeds",
-      "coriander"
-    ],
-    "vegetarian": true,
-    "vegan": true,
-    "containsEgg": false,
-    "containsDairy": false,
-    "mealTypes": [
-      "lunch",
-      "dinner"
-    ],
-    "tags": [
-      "plant-protein",
-      "heart-healthy",
-      "iron-rich",
-      "vegan"
-    ],
-    "source": "USDA Food Data Central",
-    "sourceVersion": "2026.1",
-    "createdAt": "2026-09-02T16:10:26.652Z",
-    "updatedAt": "2026-09-06T12:39:59.314Z"
-  },
-  {
-    "_id": "id_1788365426654_pfq9twe",
-    "foodId": "food_ni_04",
-    "name": "Stuffed Methi & Paneer Paratha with Mint Curd",
-    "category": "Breakfast",
-    "cuisine": "North Indian",
-    "servingSize": "2 medium parathas + 1 bowl curd",
-    "calories": 420,
-    "protein": 17,
-    "carbohydrates": 50,
-    "fat": 16,
-    "fiber": 8,
-    "sodium": 480,
-    "sugar": 4,
-    "micronutrients": {
-      "iron": 4.1,
-      "calcium": 280,
-      "vitaminD": 0.4,
-      "vitaminB12": 0.5,
-      "potassium": 440,
-      "magnesium": 75
-    },
-    "allergens": [
-      "wheat",
-      "milk"
-    ],
-    "ingredients": [
-      "whole wheat flour",
-      "fresh fenugreek leaves (methi)",
-      "crumbled paneer",
-      "low-fat yogurt",
-      "carom seeds (ajwain)"
-    ],
-    "vegetarian": true,
-    "vegan": false,
-    "containsEgg": false,
-    "containsDairy": true,
-    "mealTypes": [
-      "breakfast",
-      "lunch"
-    ],
-    "tags": [
-      "fiber-rich",
-      "fenugreek",
-      "glycemic-support"
-    ],
-    "source": "NIN Composition Tables",
-    "sourceVersion": "2026.1",
-    "createdAt": "2026-09-02T16:10:26.654Z",
-    "updatedAt": "2026-09-06T12:39:59.316Z"
-  },
-  {
-    "_id": "id_1788365426655_9m34iij",
-    "foodId": "food_ni_05",
-    "name": "Roasted Makhana (Foxnuts) with Turmeric & Black Pepper",
-    "category": "Snack",
-    "cuisine": "North Indian",
-    "servingSize": "1 bowl (40g)",
-    "calories": 140,
-    "protein": 4,
-    "carbohydrates": 26,
-    "fat": 2,
-    "fiber": 4,
-    "sodium": 180,
-    "sugar": 1,
-    "micronutrients": {
-      "iron": 1.6,
-      "calcium": 70,
-      "vitaminD": 0,
-      "vitaminB12": 0,
-      "potassium": 190,
-      "magnesium": 45
-    },
-    "allergens": [],
-    "ingredients": [
-      "foxnuts (lotus seeds)",
-      "turmeric",
-      "black pepper",
-      "rock salt",
-      "cold-pressed sesame oil (light spray)"
-    ],
-    "vegetarian": true,
-    "vegan": true,
-    "containsEgg": false,
-    "containsDairy": false,
-    "mealTypes": [
       "snack"
     ],
     "tags": [
-      "low-calorie",
-      "antioxidant",
-      "light-snack"
+      "travel-friendly",
+      "digestive-aid",
+      "omega-3"
     ],
-    "source": "Standard Nutrition Database",
+    "source": "NIN Composition Tables",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.655Z",
-    "updatedAt": "2026-09-06T12:39:59.317Z"
+    "updatedAt": "2026-09-06T13:07:28.529Z"
   },
   {
     "_id": "id_1788365426656_f28nj2k",
     "foodId": "food_as_01",
-    "name": "Tofu & Vegetable Stir-Fry with Soba Noodles",
+    "name": "Steamed Edamame & Sesame Soba Noodle Bowl",
     "category": "Main Course",
     "cuisine": "Asian",
-    "servingSize": "1 bowl (320g)",
-    "calories": 440,
-    "protein": 21,
-    "carbohydrates": 58,
-    "fat": 14,
-    "fiber": 8,
-    "sodium": 590,
-    "sugar": 5,
+    "servingSize": "1 large bowl (320g)",
+    "calories": 380,
+    "protein": 19,
+    "carbohydrates": 56,
+    "fat": 9,
+    "fiber": 9,
+    "sodium": 460,
+    "sugar": 3,
     "micronutrients": {
-      "iron": 4.6,
-      "calcium": 230,
+      "iron": 4.1,
+      "calcium": 110,
       "vitaminD": 0,
       "vitaminB12": 0,
       "potassium": 510,
@@ -588,16 +598,16 @@
     },
     "allergens": [
       "soy",
-      "sesame"
+      "sesame",
+      "wheat"
     ],
     "ingredients": [
-      "firm tofu",
       "buckwheat soba noodles",
-      "broccoli",
-      "shiitake mushrooms",
-      "carrots",
-      "tamari soy sauce",
-      "sesame oil"
+      "shelled edamame",
+      "toasted sesame seeds",
+      "baby bok choy",
+      "nori",
+      "tamari soy"
     ],
     "vegetarian": true,
     "vegan": true,
@@ -609,64 +619,68 @@
     ],
     "tags": [
       "plant-protein",
-      "antioxidant",
-      "dairy-free"
+      "antioxidant-dense",
+      "vegan"
     ],
-    "source": "USDA Food Data Central",
+    "source": "Standard Nutrition Database",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.656Z",
-    "updatedAt": "2026-09-06T12:39:59.325Z"
+    "updatedAt": "2026-09-06T13:07:28.532Z"
   },
   {
     "_id": "id_1788365426657_v9own6r",
     "foodId": "food_as_02",
-    "name": "Miso Vegetable & Brown Rice Noodle Soup",
+    "name": "Tofu & Mixed Asian Greens Stir-Fry with Brown Rice",
     "category": "Main Course",
     "cuisine": "Asian",
-    "servingSize": "1 large bowl (380g)",
-    "calories": 330,
-    "protein": 13,
-    "carbohydrates": 52,
-    "fat": 7,
-    "fiber": 7,
-    "sodium": 620,
+    "servingSize": "1 large plate (350g)",
+    "calories": 410,
+    "protein": 22,
+    "carbohydrates": 54,
+    "fat": 11,
+    "fiber": 8,
+    "sodium": 470,
     "sugar": 3,
     "micronutrients": {
-      "iron": 3.1,
-      "calcium": 95,
-      "vitaminD": 0.8,
+      "iron": 4.8,
+      "calcium": 240,
+      "vitaminD": 0,
       "vitaminB12": 0,
-      "potassium": 440,
-      "magnesium": 68
+      "potassium": 530,
+      "magnesium": 88
     },
     "allergens": [
-      "soy"
+      "soy",
+      "sesame"
     ],
     "ingredients": [
-      "fermented miso paste",
-      "brown rice noodles",
-      "bok choy",
-      "edamame",
-      "wakame seaweed",
-      "scallions"
+      "firm tofu",
+      "brown rice",
+      "broccoli",
+      "snap peas",
+      "carrots",
+      "garlic",
+      "sesame oil",
+      "low-sodium soy"
     ],
     "vegetarian": true,
     "vegan": true,
     "containsEgg": false,
     "containsDairy": false,
     "mealTypes": [
+      "lunch",
       "dinner"
     ],
     "tags": [
-      "warm-broth",
-      "fermented",
-      "comforting",
-      "gut-support"
+      "high-protein",
+      "calcium-rich",
+      "vegan",
+      "plant-power"
     ],
-    "source": "Standard Asian Food Composition",
+    "source": "Standard Nutrition Database",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-02T16:10:26.657Z",
-    "updatedAt": "2026-09-06T12:39:59.326Z"
+    "updatedAt": "2026-09-06T13:07:28.534Z"
   },
   {
     "_id": "id_1788365426658_blkvkhi",
@@ -1281,33 +1295,35 @@
   {
     "_id": "id_1788623122549_pnwm31t",
     "foodId": "food_si_07",
-    "name": "Foxtail Millet Upma with Mixed Vegetables & Ginger",
+    "name": "Ragi Idiyappam with Mixed Vegetable Stew",
     "category": "Breakfast",
     "cuisine": "South Indian",
-    "servingSize": "1 bowl (200g)",
-    "calories": 290,
+    "servingSize": "2 ragi idiyappams + 1 bowl mild vegetable coconut stew",
+    "calories": 340,
     "protein": 9,
-    "carbohydrates": 48,
-    "fat": 7,
+    "carbohydrates": 60,
+    "fat": 6,
     "fiber": 9,
     "sodium": 380,
     "sugar": 3,
     "micronutrients": {
-      "iron": 3.8,
-      "calcium": 45,
+      "iron": 4.2,
+      "calcium": 280,
       "vitaminD": 0,
       "vitaminB12": 0,
-      "potassium": 290,
-      "magnesium": 82
+      "potassium": 410,
+      "magnesium": 75
     },
-    "allergens": [],
+    "allergens": [
+      "coconut"
+    ],
     "ingredients": [
-      "foxtail millet",
+      "finger millet (ragi) flour",
       "carrots",
-      "green peas",
+      "beans",
+      "potatoes",
+      "light coconut milk",
       "ginger",
-      "mustard seeds",
-      "green chillies",
       "curry leaves"
     ],
     "vegetarian": true,
@@ -1319,15 +1335,15 @@
       "dinner"
     ],
     "tags": [
-      "low-glycemic",
-      "gluten-free",
+      "calcium-rich",
       "millet",
-      "high-fiber"
+      "easy-to-digest",
+      "vegan"
     ],
-    "source": "NIN Millet Database",
+    "source": "NIN Composition Tables",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-05T15:45:22.549Z",
-    "updatedAt": "2026-09-06T12:39:59.304Z"
+    "updatedAt": "2026-09-06T13:07:28.520Z"
   },
   {
     "_id": "id_1788623122551_6ajiwmk",
@@ -1384,53 +1400,54 @@
   {
     "_id": "id_1788623122559_j49u3ac",
     "foodId": "food_ni_06",
-    "name": "Bajra & Moong Dal Khichdi with Steamed Spinach",
+    "name": "Smoked Baingan Bharta with Multigrain Phulka",
     "category": "Main Course",
     "cuisine": "North Indian",
-    "servingSize": "1 large bowl (260g)",
-    "calories": 380,
-    "protein": 15,
-    "carbohydrates": 62,
+    "servingSize": "1 bowl roasted eggplant mash + 2 multigrain rotis",
+    "calories": 350,
+    "protein": 12,
+    "carbohydrates": 56,
     "fat": 8,
-    "fiber": 12,
-    "sodium": 420,
-    "sugar": 2,
+    "fiber": 11,
+    "sodium": 410,
+    "sugar": 5,
     "micronutrients": {
-      "iron": 6.1,
-      "calcium": 110,
+      "iron": 3.6,
+      "calcium": 85,
       "vitaminD": 0,
       "vitaminB12": 0,
-      "potassium": 510,
-      "magnesium": 120
+      "potassium": 520,
+      "magnesium": 80
     },
-    "allergens": [],
+    "allergens": [
+      "wheat"
+    ],
     "ingredients": [
-      "pearl millet (bajra)",
-      "split yellow moong dal",
-      "spinach",
-      "ginger",
-      "cumin",
+      "roasted eggplant",
+      "tomatoes",
+      "green peas",
+      "multigrain flour",
+      "mustard oil",
       "garlic",
-      "ghee"
+      "ginger"
     ],
     "vegetarian": true,
-    "vegan": false,
+    "vegan": true,
     "containsEgg": false,
-    "containsDairy": true,
+    "containsDairy": false,
     "mealTypes": [
-      "lunch",
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "tags": [
-      "zinc-rich",
-      "iron-rich",
-      "comfort-food",
-      "anemia-friendly"
+      "antioxidant-rich",
+      "high-fiber",
+      "vegan"
     ],
     "source": "NIN Composition Tables",
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-05T15:45:22.559Z",
-    "updatedAt": "2026-09-06T12:39:59.319Z"
+    "updatedAt": "2026-09-06T13:07:28.531Z"
   },
   {
     "_id": "id_1788623122565_39s3wrx",
@@ -2013,5 +2030,1539 @@
     "sourceVersion": "2026.1",
     "createdAt": "2026-09-06T12:38:51.675Z",
     "updatedAt": "2026-09-06T12:39:59.342Z"
+  },
+  {
+    "_id": "id_1788700031272_1lmv8oq",
+    "foodId": "food_nv_chicken_01",
+    "name": "Chettinad Pepper Chicken with Brown Rice",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "150g lean chicken breast curry + 1 cup brown rice",
+    "calories": 460,
+    "protein": 38,
+    "carbohydrates": 48,
+    "fat": 9,
+    "fiber": 6,
+    "sodium": 480,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.2,
+      "calcium": 45,
+      "vitaminD": 0.3,
+      "vitaminB12": 0.8,
+      "potassium": 520,
+      "magnesium": 65
+    },
+    "allergens": [],
+    "ingredients": [
+      "skinless chicken breast",
+      "brown rice",
+      "black pepper",
+      "curry leaves",
+      "shallots",
+      "ginger",
+      "garlic",
+      "fennel seeds",
+      "turmeric"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "lean-poultry",
+      "immunity-boosting",
+      "metabolism-support"
+    ],
+    "source": "NIN / Indian Food Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.272Z",
+    "updatedAt": "2026-09-06T13:07:28.463Z"
+  },
+  {
+    "_id": "id_1788700031276_xfghibr",
+    "foodId": "food_nv_chicken_02",
+    "name": "Tandoori Chicken Breast with Mint Chutney & Salad",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "180g roasted chicken breast + fresh cucumber tomato salad",
+    "calories": 360,
+    "protein": 44,
+    "carbohydrates": 12,
+    "fat": 8,
+    "fiber": 4,
+    "sodium": 460,
+    "sugar": 3,
+    "micronutrients": {
+      "iron": 2.8,
+      "calcium": 60,
+      "vitaminD": 0.4,
+      "vitaminB12": 1.1,
+      "potassium": 580,
+      "magnesium": 55
+    },
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "chicken breast",
+      "hung curd/yogurt",
+      "mint",
+      "coriander",
+      "kashmiri chili",
+      "garam masala",
+      "lemon juice",
+      "cucumbers"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": true,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "lean-poultry",
+      "muscle-recovery"
+    ],
+    "source": "Standard Nutrition Database",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.276Z",
+    "updatedAt": "2026-09-06T13:07:28.467Z"
+  },
+  {
+    "_id": "id_1788700031277_tqoj355",
+    "foodId": "food_nv_chicken_03",
+    "name": "Murgh Methi (Fenugreek Chicken) with Whole Wheat Phulkas",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "1 bowl methi chicken + 2 whole wheat phulkas",
+    "calories": 430,
+    "protein": 36,
+    "carbohydrates": 46,
+    "fat": 9,
+    "fiber": 7,
+    "sodium": 420,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 4.1,
+      "calcium": 95,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.7,
+      "potassium": 490,
+      "magnesium": 72
+    },
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "skinless chicken",
+      "fresh fenugreek leaves (methi)",
+      "whole wheat flour",
+      "onions",
+      "tomatoes",
+      "ginger",
+      "cumin"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "fiber-rich",
+      "blood-sugar-friendly",
+      "lean-poultry"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.277Z",
+    "updatedAt": "2026-09-06T13:07:28.469Z"
+  },
+  {
+    "_id": "id_1788700031278_qhehbf1",
+    "foodId": "food_nv_chicken_04",
+    "name": "Grilled Lemon Herb Chicken with Quinoa & Steamed Broccoli",
+    "category": "Main Course",
+    "cuisine": "Western",
+    "servingSize": "160g chicken breast + 1 cup cooked quinoa + 1 cup broccoli",
+    "calories": 440,
+    "protein": 42,
+    "carbohydrates": 38,
+    "fat": 8,
+    "fiber": 8,
+    "sodium": 380,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.8,
+      "calcium": 75,
+      "vitaminD": 0.3,
+      "vitaminB12": 0.9,
+      "potassium": 690,
+      "magnesium": 95
+    },
+    "allergens": [],
+    "ingredients": [
+      "chicken breast",
+      "quinoa",
+      "broccoli",
+      "olive oil",
+      "lemon",
+      "rosemary",
+      "oregano",
+      "garlic"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "superfood",
+      "clean-eating",
+      "lean-poultry"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.278Z",
+    "updatedAt": "2026-09-06T13:07:28.471Z"
+  },
+  {
+    "_id": "id_1788700031279_crwzbbr",
+    "foodId": "food_nv_chicken_05",
+    "name": "Country Chicken (Naatu Kozhi) Rasam Soup with Red Rice",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "1 large bowl clear chicken broth + 1 cup steamed red rice",
+    "calories": 410,
+    "protein": 32,
+    "carbohydrates": 52,
+    "fat": 7,
+    "fiber": 6,
+    "sodium": 450,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 55,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.8,
+      "potassium": 470,
+      "magnesium": 68
+    },
+    "allergens": [],
+    "ingredients": [
+      "country chicken",
+      "red matta rice",
+      "black pepper",
+      "cumin",
+      "garlic",
+      "tomatoes",
+      "coriander seeds",
+      "turmeric"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "gut-soothing",
+      "high-protein",
+      "traditional",
+      "lean-poultry"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.279Z",
+    "updatedAt": "2026-09-06T13:07:28.472Z"
+  },
+  {
+    "_id": "id_1788700031282_0lbujyo",
+    "foodId": "food_nv_chicken_06",
+    "name": "Steamed Chicken & Bok Choy Soba Noodle Soup",
+    "category": "Main Course",
+    "cuisine": "Asian",
+    "servingSize": "1 large bowl (350g)",
+    "calories": 390,
+    "protein": 34,
+    "carbohydrates": 44,
+    "fat": 6,
+    "fiber": 5,
+    "sodium": 480,
+    "sugar": 3,
+    "micronutrients": {
+      "iron": 3.1,
+      "calcium": 80,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.6,
+      "potassium": 510,
+      "magnesium": 70
+    },
+    "allergens": [
+      "wheat",
+      "soy"
+    ],
+    "ingredients": [
+      "buckwheat soba noodles",
+      "chicken breast",
+      "bok choy",
+      "mushrooms",
+      "low-sodium tamari soy",
+      "ginger",
+      "spring onions"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "dinner",
+      "lunch"
+    ],
+    "tags": [
+      "light-dinner",
+      "high-protein",
+      "digestive-rest",
+      "lean-poultry"
+    ],
+    "source": "Standard Nutrition Database",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.282Z",
+    "updatedAt": "2026-09-06T13:07:28.474Z"
+  },
+  {
+    "_id": "id_1788700031283_lsyhjsr",
+    "foodId": "food_nv_chicken_07",
+    "name": "Teriyaki Chicken & Steamed Edamame Brown Rice Bowl",
+    "category": "Main Course",
+    "cuisine": "Asian",
+    "servingSize": "1 large nutrient bowl (350g)",
+    "calories": 450,
+    "protein": 39,
+    "carbohydrates": 52,
+    "fat": 8,
+    "fiber": 7,
+    "sodium": 490,
+    "sugar": 4,
+    "micronutrients": {
+      "iron": 3.6,
+      "calcium": 70,
+      "vitaminD": 0.2,
+      "vitaminB12": 0.7,
+      "potassium": 560,
+      "magnesium": 85
+    },
+    "allergens": [
+      "soy",
+      "sesame"
+    ],
+    "ingredients": [
+      "chicken breast",
+      "brown rice",
+      "edamame beans",
+      "carrots",
+      "broccoli",
+      "tamari soy",
+      "sesame seeds",
+      "ginger"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "antioxidant-rich",
+      "lean-poultry"
+    ],
+    "source": "Standard Nutrition Database",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.283Z",
+    "updatedAt": "2026-09-06T13:07:28.475Z"
+  },
+  {
+    "_id": "id_1788700031285_bamxjz5",
+    "foodId": "food_nv_mutton_01",
+    "name": "Slow-Cooked Lean Mutton Chukka with Foxtail Millet",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "140g lean goat meat + 1 cup cooked foxtail millet",
+    "calories": 470,
+    "protein": 36,
+    "carbohydrates": 44,
+    "fat": 12,
+    "fiber": 7,
+    "sodium": 490,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 4.8,
+      "calcium": 55,
+      "vitaminD": 0.3,
+      "vitaminB12": 2.2,
+      "potassium": 540,
+      "magnesium": 75
+    },
+    "allergens": [],
+    "ingredients": [
+      "lean goat meat/mutton",
+      "foxtail millet",
+      "shallots",
+      "curry leaves",
+      "black pepper",
+      "coriander",
+      "ginger",
+      "garlic"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "iron-rich",
+      "high-protein",
+      "millet-based",
+      "lean-meat"
+    ],
+    "source": "NIN / Indian Food Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.285Z",
+    "updatedAt": "2026-09-06T13:07:28.477Z"
+  },
+  {
+    "_id": "id_1788700031286_5sr2ik3",
+    "foodId": "food_nv_mutton_02",
+    "name": "Tender Mutton Rogan Josh (Low-Oil) with Whole Wheat Chapati",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "1 bowl lean mutton curry + 2 whole wheat chapatis",
+    "calories": 480,
+    "protein": 35,
+    "carbohydrates": 46,
+    "fat": 13,
+    "fiber": 6,
+    "sodium": 470,
+    "sugar": 3,
+    "micronutrients": {
+      "iron": 4.6,
+      "calcium": 60,
+      "vitaminD": 0.3,
+      "vitaminB12": 2.4,
+      "potassium": 510,
+      "magnesium": 68
+    },
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "lean mutton",
+      "whole wheat flour",
+      "kashmiri chili",
+      "fennel powder",
+      "ginger powder",
+      "cardamom",
+      "low-fat yogurt"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": true,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "iron-rich",
+      "high-protein",
+      "zinc-rich",
+      "lean-meat"
+    ],
+    "source": "Standard Nutrition Database",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.286Z",
+    "updatedAt": "2026-09-06T13:07:28.479Z"
+  },
+  {
+    "_id": "id_1788700031288_ouoxyei",
+    "foodId": "food_nv_mutton_03",
+    "name": "Traditional Mutton Bone Broth Soup with Steamed Idiyappam",
+    "category": "Breakfast",
+    "cuisine": "South Indian",
+    "servingSize": "1 bowl nutrient-dense broth + 2 steamed idiyappams",
+    "calories": 380,
+    "protein": 26,
+    "carbohydrates": 48,
+    "fat": 8,
+    "fiber": 4,
+    "sodium": 460,
+    "sugar": 1,
+    "micronutrients": {
+      "iron": 3.9,
+      "calcium": 110,
+      "vitaminD": 0.4,
+      "vitaminB12": 1.8,
+      "potassium": 480,
+      "magnesium": 62
+    },
+    "allergens": [],
+    "ingredients": [
+      "mutton bone broth",
+      "rice flour",
+      "shallots",
+      "black pepper",
+      "cumin",
+      "garlic",
+      "coriander"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "tags": [
+      "collagen-rich",
+      "joint-health",
+      "traditional",
+      "lean-meat"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.288Z",
+    "updatedAt": "2026-09-06T13:07:28.481Z"
+  },
+  {
+    "_id": "id_1788700031289_l64qfvk",
+    "foodId": "food_nv_fish_01",
+    "name": "Chettinad Spicy Grilled Fish with Steamed Rice & Rasam",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "160g kingfish/seer fish + 1 cup steamed rice + 1 cup pepper rasam",
+    "calories": 430,
+    "protein": 36,
+    "carbohydrates": 50,
+    "fat": 8,
+    "fiber": 5,
+    "sodium": 460,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 2.6,
+      "calcium": 70,
+      "vitaminD": 4.8,
+      "vitaminB12": 2.6,
+      "potassium": 590,
+      "magnesium": 70
+    },
+    "allergens": [
+      "fish"
+    ],
+    "ingredients": [
+      "seer fish / vanjaram",
+      "brown or white rice",
+      "black pepper",
+      "curry leaves",
+      "tamarind",
+      "garlic",
+      "turmeric"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "omega-3",
+      "lean-fish",
+      "heart-healthy"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.289Z",
+    "updatedAt": "2026-09-06T13:07:28.482Z"
+  },
+  {
+    "_id": "id_1788700031290_s6w1a28",
+    "foodId": "food_nv_fish_02",
+    "name": "Steamed Kerala Fish Moilee with Matta Brown Rice",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "1 plate (350g)",
+    "calories": 450,
+    "protein": 34,
+    "carbohydrates": 52,
+    "fat": 9,
+    "fiber": 6,
+    "sodium": 440,
+    "sugar": 3,
+    "micronutrients": {
+      "iron": 2.9,
+      "calcium": 65,
+      "vitaminD": 4.2,
+      "vitaminB12": 2.4,
+      "potassium": 560,
+      "magnesium": 74
+    },
+    "allergens": [
+      "fish",
+      "coconut"
+    ],
+    "ingredients": [
+      "pomfret/seer fish",
+      "matta rice",
+      "light coconut milk",
+      "ginger",
+      "green chilies",
+      "shallots",
+      "curry leaves"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "omega-3",
+      "lean-fish",
+      "gut-friendly",
+      "high-protein"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.290Z",
+    "updatedAt": "2026-09-06T13:07:28.484Z"
+  },
+  {
+    "_id": "id_1788700031293_aby23ov",
+    "foodId": "food_nv_fish_03",
+    "name": "Baked Lemon Garlic Cod with Steamed Asparagus & Quinoa",
+    "category": "Main Course",
+    "cuisine": "Western",
+    "servingSize": "170g white fish cod + 1 cup quinoa + steamed asparagus",
+    "calories": 410,
+    "protein": 38,
+    "carbohydrates": 36,
+    "fat": 7,
+    "fiber": 7,
+    "sodium": 360,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 2.5,
+      "calcium": 60,
+      "vitaminD": 2.1,
+      "vitaminB12": 1.9,
+      "potassium": 640,
+      "magnesium": 88
+    },
+    "allergens": [
+      "fish"
+    ],
+    "ingredients": [
+      "atlantic cod",
+      "quinoa",
+      "asparagus",
+      "olive oil",
+      "lemon",
+      "garlic",
+      "black pepper",
+      "parsley"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "dinner",
+      "lunch"
+    ],
+    "tags": [
+      "lean-fish",
+      "high-protein",
+      "low-calorie",
+      "heart-healthy"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.293Z",
+    "updatedAt": "2026-09-06T13:07:28.485Z"
+  },
+  {
+    "_id": "id_1788700031295_f8moj7h",
+    "foodId": "food_nv_fish_04",
+    "name": "Grilled Atlantic Salmon with Herb Quinoa & Sauteed Greens",
+    "category": "Main Course",
+    "cuisine": "Western",
+    "servingSize": "160g salmon fillet + 1 cup quinoa + sauteed spinach",
+    "calories": 490,
+    "protein": 38,
+    "carbohydrates": 34,
+    "fat": 16,
+    "fiber": 6,
+    "sodium": 390,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.2,
+      "calcium": 85,
+      "vitaminD": 11.2,
+      "vitaminB12": 4.8,
+      "potassium": 720,
+      "magnesium": 98
+    },
+    "allergens": [
+      "fish"
+    ],
+    "ingredients": [
+      "atlantic salmon",
+      "quinoa",
+      "spinach",
+      "extra virgin olive oil",
+      "lemon",
+      "dill",
+      "garlic"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "dinner",
+      "lunch"
+    ],
+    "tags": [
+      "omega-3",
+      "brain-health",
+      "cardiovascular-support",
+      "high-protein"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.295Z",
+    "updatedAt": "2026-09-06T13:07:28.487Z"
+  },
+  {
+    "_id": "id_1788700031296_5m2zsjl",
+    "foodId": "food_nv_fish_05",
+    "name": "Tangy Meen Kuzhambu (Fish Curry) with Little Millet",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "1 bowl fish curry + 1 cup cooked little millet",
+    "calories": 420,
+    "protein": 33,
+    "carbohydrates": 48,
+    "fat": 8,
+    "fiber": 7,
+    "sodium": 470,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.4,
+      "calcium": 75,
+      "vitaminD": 3.8,
+      "vitaminB12": 2.2,
+      "potassium": 580,
+      "magnesium": 80
+    },
+    "allergens": [
+      "fish"
+    ],
+    "ingredients": [
+      "rohu / seer fish",
+      "little millet (samai)",
+      "tamarind",
+      "shallots",
+      "tomatoes",
+      "fenugreek",
+      "sesame oil"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "omega-3",
+      "millet-based",
+      "high-protein",
+      "traditional"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.296Z",
+    "updatedAt": "2026-09-06T13:07:28.489Z"
+  },
+  {
+    "_id": "id_1788700031299_wz3kxyo",
+    "foodId": "food_nv_seafood_01",
+    "name": "Coastal Spiced Prawn Masala with Steamed Red Rice",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "150g tiger prawns curry + 1 cup Kerala red rice",
+    "calories": 420,
+    "protein": 35,
+    "carbohydrates": 50,
+    "fat": 7,
+    "fiber": 6,
+    "sodium": 490,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.1,
+      "calcium": 90,
+      "vitaminD": 1.8,
+      "vitaminB12": 2,
+      "potassium": 520,
+      "magnesium": 75
+    },
+    "allergens": [
+      "seafood"
+    ],
+    "ingredients": [
+      "fresh prawns/shrimp",
+      "red matta rice",
+      "onions",
+      "tomatoes",
+      "ginger",
+      "garlic",
+      "curry leaves",
+      "turmeric"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "zinc-rich",
+      "lean-seafood",
+      "high-protein",
+      "immunity-boosting"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.299Z",
+    "updatedAt": "2026-09-06T13:07:28.491Z"
+  },
+  {
+    "_id": "id_1788700031301_xz41wl9",
+    "foodId": "food_nv_seafood_02",
+    "name": "Chettinad Pepper Crab Masala with Steamed Millet Dosa",
+    "category": "Main Course",
+    "cuisine": "South Indian",
+    "servingSize": "1 plate crab curry + 2 crisp millet dosas",
+    "calories": 430,
+    "protein": 34,
+    "carbohydrates": 46,
+    "fat": 8,
+    "fiber": 6,
+    "sodium": 510,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.8,
+      "calcium": 120,
+      "vitaminD": 2.2,
+      "vitaminB12": 3.2,
+      "potassium": 540,
+      "magnesium": 82
+    },
+    "allergens": [
+      "seafood"
+    ],
+    "ingredients": [
+      "fresh crab",
+      "foxtail millet flour",
+      "black pepper",
+      "shallots",
+      "fennel",
+      "curry leaves",
+      "garlic"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "dinner",
+      "lunch"
+    ],
+    "tags": [
+      "mineral-rich",
+      "omega-3",
+      "traditional",
+      "high-protein"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.301Z",
+    "updatedAt": "2026-09-06T13:07:28.493Z"
+  },
+  {
+    "_id": "id_1788700031302_f01oafm",
+    "foodId": "food_nv_seafood_03",
+    "name": "Grilled Garlic Herb Prawn Skewers with Greek Salad",
+    "category": "Main Course",
+    "cuisine": "Western",
+    "servingSize": "160g grilled prawns + cucumber, tomato, bell pepper & olive salad",
+    "calories": 340,
+    "protein": 32,
+    "carbohydrates": 14,
+    "fat": 10,
+    "fiber": 4,
+    "sodium": 430,
+    "sugar": 4,
+    "micronutrients": {
+      "iron": 2.8,
+      "calcium": 95,
+      "vitaminD": 1.5,
+      "vitaminB12": 1.8,
+      "potassium": 560,
+      "magnesium": 65
+    },
+    "allergens": [
+      "seafood"
+    ],
+    "ingredients": [
+      "jumbo prawns",
+      "olive oil",
+      "lemon",
+      "garlic",
+      "cucumbers",
+      "cherry tomatoes",
+      "kalamata olives",
+      "oregano"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "dinner",
+      "lunch"
+    ],
+    "tags": [
+      "low-carb",
+      "lean-seafood",
+      "zinc-rich",
+      "high-protein"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.302Z",
+    "updatedAt": "2026-09-06T13:07:28.494Z"
+  },
+  {
+    "_id": "id_1788700031304_s3tb2ip",
+    "foodId": "food_egg_01",
+    "name": "High-Protein Double Egg Dosa with Mint Chutney",
+    "category": "Breakfast",
+    "cuisine": "South Indian",
+    "servingSize": "1 large crisp dosa topped with 2 whole spiced eggs",
+    "calories": 390,
+    "protein": 20,
+    "carbohydrates": 42,
+    "fat": 12,
+    "fiber": 5,
+    "sodium": 490,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.4,
+      "calcium": 70,
+      "vitaminD": 2,
+      "vitaminB12": 1.4,
+      "potassium": 380,
+      "magnesium": 55
+    },
+    "allergens": [
+      "eggs"
+    ],
+    "ingredients": [
+      "fermented rice & urad dal batter",
+      "farm fresh eggs",
+      "onions",
+      "green chilies",
+      "black pepper",
+      "curry leaves",
+      "mint"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "energizing",
+      "traditional",
+      "eggetarian"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.304Z",
+    "updatedAt": "2026-09-06T13:07:28.497Z"
+  },
+  {
+    "_id": "id_1788700031305_9fu6xrp",
+    "foodId": "food_egg_02",
+    "name": "South Indian Egg & Sprouted Moong Sundal",
+    "category": "Breakfast",
+    "cuisine": "South Indian",
+    "servingSize": "1 large bowl (220g)",
+    "calories": 330,
+    "protein": 22,
+    "carbohydrates": 32,
+    "fat": 9,
+    "fiber": 8,
+    "sodium": 410,
+    "sugar": 3,
+    "micronutrients": {
+      "iron": 4.2,
+      "calcium": 75,
+      "vitaminD": 1.8,
+      "vitaminB12": 1.2,
+      "potassium": 490,
+      "magnesium": 80
+    },
+    "allergens": [
+      "eggs",
+      "coconut"
+    ],
+    "ingredients": [
+      "sprouted green moong",
+      "hard-boiled eggs",
+      "fresh grated coconut",
+      "mustard seeds",
+      "curry leaves",
+      "lemon juice"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast",
+      "snack"
+    ],
+    "tags": [
+      "superfood",
+      "high-protein",
+      "gut-healthy",
+      "eggetarian"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.305Z",
+    "updatedAt": "2026-09-06T13:07:28.499Z"
+  },
+  {
+    "_id": "id_1788700031307_vx4qebj",
+    "foodId": "food_egg_03",
+    "name": "Homestyle Spiced Egg Curry with Brown Rice",
+    "category": "Main Course",
+    "cuisine": "North Indian",
+    "servingSize": "2 boiled eggs in spiced tomato gravy + 1 cup brown rice",
+    "calories": 440,
+    "protein": 24,
+    "carbohydrates": 54,
+    "fat": 12,
+    "fiber": 6,
+    "sodium": 460,
+    "sugar": 3,
+    "micronutrients": {
+      "iron": 3.8,
+      "calcium": 80,
+      "vitaminD": 2.2,
+      "vitaminB12": 1.6,
+      "potassium": 460,
+      "magnesium": 70
+    },
+    "allergens": [
+      "eggs"
+    ],
+    "ingredients": [
+      "boiled eggs",
+      "brown rice",
+      "tomatoes",
+      "onions",
+      "ginger",
+      "garlic",
+      "turmeric",
+      "coriander"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "comfort-food",
+      "eggetarian"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.307Z",
+    "updatedAt": "2026-09-06T13:07:28.501Z"
+  },
+  {
+    "_id": "id_1788700031308_bae684u",
+    "foodId": "food_egg_04",
+    "name": "Fluffy Scrambled Eggs on Whole Grain Sourdough Toast",
+    "category": "Breakfast",
+    "cuisine": "Western",
+    "servingSize": "2 scrambled eggs + 2 slices artisan sourdough + half avocado",
+    "calories": 420,
+    "protein": 22,
+    "carbohydrates": 36,
+    "fat": 16,
+    "fiber": 7,
+    "sodium": 430,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.5,
+      "calcium": 65,
+      "vitaminD": 2.1,
+      "vitaminB12": 1.5,
+      "potassium": 520,
+      "magnesium": 65
+    },
+    "allergens": [
+      "eggs",
+      "wheat"
+    ],
+    "ingredients": [
+      "eggs",
+      "whole wheat sourdough",
+      "avocado",
+      "olive oil",
+      "chives",
+      "black pepper",
+      "sea salt"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "tags": [
+      "high-protein",
+      "healthy-fats",
+      "sustained-energy",
+      "eggetarian"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.308Z",
+    "updatedAt": "2026-09-06T13:07:28.502Z"
+  },
+  {
+    "_id": "id_1788700031310_89s3zbr",
+    "foodId": "food_egg_05",
+    "name": "Spinach, Mushroom & Herb 3-Egg White Omelette",
+    "category": "Breakfast",
+    "cuisine": "Western",
+    "servingSize": "1 large fluffy omelette (1 whole egg + 2 whites) + slice rye toast",
+    "calories": 310,
+    "protein": 24,
+    "carbohydrates": 22,
+    "fat": 8,
+    "fiber": 5,
+    "sodium": 390,
+    "sugar": 2,
+    "micronutrients": {
+      "iron": 3.2,
+      "calcium": 85,
+      "vitaminD": 1.2,
+      "vitaminB12": 1,
+      "potassium": 470,
+      "magnesium": 60
+    },
+    "allergens": [
+      "eggs",
+      "wheat"
+    ],
+    "ingredients": [
+      "eggs",
+      "fresh baby spinach",
+      "button mushrooms",
+      "rye bread",
+      "olive oil",
+      "black pepper",
+      "oregano"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "tags": [
+      "lean-protein",
+      "low-carb",
+      "energizing",
+      "eggetarian"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.310Z",
+    "updatedAt": "2026-09-06T13:07:28.504Z"
+  },
+  {
+    "_id": "id_1788700031311_irov2ag",
+    "foodId": "food_egg_06",
+    "name": "Boiled Egg & Sprouted Moong Chaat with Pomegranate",
+    "category": "Snack",
+    "cuisine": "North Indian",
+    "servingSize": "1 medium bowl (180g)",
+    "calories": 260,
+    "protein": 16,
+    "carbohydrates": 28,
+    "fat": 6,
+    "fiber": 6,
+    "sodium": 340,
+    "sugar": 6,
+    "micronutrients": {
+      "iron": 3.1,
+      "calcium": 55,
+      "vitaminD": 1.1,
+      "vitaminB12": 0.8,
+      "potassium": 420,
+      "magnesium": 55
+    },
+    "allergens": [
+      "eggs"
+    ],
+    "ingredients": [
+      "boiled egg",
+      "sprouted moong",
+      "pomegranate pearls",
+      "cucumber",
+      "chaat masala",
+      "lemon juice",
+      "coriander"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "snack",
+      "breakfast"
+    ],
+    "tags": [
+      "protein-snack",
+      "antioxidant-rich",
+      "eggetarian"
+    ],
+    "source": "NIN Composition Tables",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.311Z",
+    "updatedAt": "2026-09-06T13:07:28.506Z"
+  },
+  {
+    "_id": "id_1788700031313_ul7g587",
+    "foodId": "food_egg_07",
+    "name": "Mediterranean Poached Egg Shakshuka with Whole Wheat Pita",
+    "category": "Main Course",
+    "cuisine": "Western",
+    "servingSize": "2 eggs poached in rich spiced tomato bell pepper sauce + 1 whole wheat pita",
+    "calories": 410,
+    "protein": 22,
+    "carbohydrates": 44,
+    "fat": 12,
+    "fiber": 7,
+    "sodium": 440,
+    "sugar": 5,
+    "micronutrients": {
+      "iron": 3.9,
+      "calcium": 90,
+      "vitaminD": 2,
+      "vitaminB12": 1.4,
+      "potassium": 580,
+      "magnesium": 70
+    },
+    "allergens": [
+      "eggs",
+      "wheat"
+    ],
+    "ingredients": [
+      "eggs",
+      "tomatoes",
+      "bell peppers",
+      "whole wheat pita",
+      "onions",
+      "garlic",
+      "cumin",
+      "paprika",
+      "parsley"
+    ],
+    "vegetarian": false,
+    "vegan": false,
+    "containsEgg": true,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "tags": [
+      "antioxidant-rich",
+      "high-protein",
+      "eggetarian"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.313Z",
+    "updatedAt": "2026-09-06T13:07:28.508Z"
+  },
+  {
+    "_id": "id_1788700031339_tshulxu",
+    "foodId": "food_ws_01",
+    "name": "Mediterranean Quinoa Buddha Bowl with Roasted Chickpeas & Tahini",
+    "category": "Main Course",
+    "cuisine": "Western",
+    "servingSize": "1 bowl (340g)",
+    "calories": 440,
+    "protein": 17,
+    "carbohydrates": 62,
+    "fat": 14,
+    "fiber": 12,
+    "sodium": 380,
+    "sugar": 4,
+    "micronutrients": {
+      "iron": 4.8,
+      "calcium": 120,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "potassium": 620,
+      "magnesium": 115
+    },
+    "allergens": [
+      "sesame"
+    ],
+    "ingredients": [
+      "cooked quinoa",
+      "roasted chickpeas",
+      "cucumber",
+      "cherry tomatoes",
+      "tahini paste",
+      "lemon juice",
+      "parsley"
+    ],
+    "vegetarian": true,
+    "vegan": true,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "tags": [
+      "superfood",
+      "high-fiber",
+      "plant-powered",
+      "vegan"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.339Z",
+    "updatedAt": "2026-09-06T13:07:28.536Z"
+  },
+  {
+    "_id": "id_1788700031342_hk246vd",
+    "foodId": "food_ws_02",
+    "name": "Steel-Cut Rolled Oats Porridge with Walnuts, Chia & Berries",
+    "category": "Breakfast",
+    "cuisine": "Western",
+    "servingSize": "1 bowl (240g)",
+    "calories": 340,
+    "protein": 11,
+    "carbohydrates": 52,
+    "fat": 10,
+    "fiber": 10,
+    "sodium": 80,
+    "sugar": 8,
+    "micronutrients": {
+      "iron": 3.4,
+      "calcium": 90,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "potassium": 380,
+      "magnesium": 95
+    },
+    "allergens": [
+      "tree nuts"
+    ],
+    "ingredients": [
+      "steel cut rolled oats",
+      "chia seeds",
+      "crushed walnuts",
+      "blueberries",
+      "cinnamon",
+      "almond milk"
+    ],
+    "vegetarian": true,
+    "vegan": true,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "breakfast"
+    ],
+    "tags": [
+      "heart-healthy",
+      "beta-glucan",
+      "omega-3",
+      "vegan"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.342Z",
+    "updatedAt": "2026-09-06T13:07:28.538Z"
+  },
+  {
+    "_id": "id_1788700031344_26vb7m9",
+    "foodId": "food_ws_03",
+    "name": "Mediterranean Greek Salad with Cucumber, Olives & Feta",
+    "category": "Snack",
+    "cuisine": "Western",
+    "servingSize": "1 bowl (180g)",
+    "calories": 220,
+    "protein": 8,
+    "carbohydrates": 12,
+    "fat": 15,
+    "fiber": 4,
+    "sodium": 480,
+    "sugar": 4,
+    "micronutrients": {
+      "iron": 1.4,
+      "calcium": 160,
+      "vitaminD": 0.1,
+      "vitaminB12": 0.5,
+      "potassium": 320,
+      "magnesium": 35
+    },
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "cucumbers",
+      "cherry tomatoes",
+      "kalamata olives",
+      "feta cheese",
+      "extra virgin olive oil",
+      "oregano"
+    ],
+    "vegetarian": true,
+    "vegan": false,
+    "containsEgg": false,
+    "containsDairy": true,
+    "mealTypes": [
+      "snack",
+      "lunch"
+    ],
+    "tags": [
+      "low-carb",
+      "mediterranean",
+      "gut-healthy"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.344Z",
+    "updatedAt": "2026-09-06T13:07:28.539Z"
+  },
+  {
+    "_id": "id_1788700031346_nf4ssrf",
+    "foodId": "food_ws_04",
+    "name": "Roasted Almonds, Walnuts & Pumpkin Seed Trail Mix",
+    "category": "Snack",
+    "cuisine": "Western",
+    "servingSize": "1 handful (35g)",
+    "calories": 190,
+    "protein": 7,
+    "carbohydrates": 6,
+    "fat": 16,
+    "fiber": 3,
+    "sodium": 40,
+    "sugar": 1,
+    "micronutrients": {
+      "iron": 1.8,
+      "calcium": 65,
+      "vitaminD": 0,
+      "vitaminB12": 0,
+      "potassium": 210,
+      "magnesium": 85
+    },
+    "allergens": [
+      "tree nuts"
+    ],
+    "ingredients": [
+      "raw almonds",
+      "walnuts",
+      "pumpkin seeds",
+      "sea salt"
+    ],
+    "vegetarian": true,
+    "vegan": true,
+    "containsEgg": false,
+    "containsDairy": false,
+    "mealTypes": [
+      "snack"
+    ],
+    "tags": [
+      "brain-food",
+      "healthy-fats",
+      "magnesium-rich",
+      "vegan"
+    ],
+    "source": "USDA FoodData Central",
+    "sourceVersion": "2026.1",
+    "createdAt": "2026-09-06T13:07:11.346Z",
+    "updatedAt": "2026-09-06T13:07:28.541Z"
   }
 ]
